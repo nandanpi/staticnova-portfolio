@@ -10,8 +10,8 @@ const Navbar = () => {
                 <div className="px-6 py-4">
                     <ul className="flex space-x-6 text-3xl ocra">
                         <li><HashLink smooth to="/#works">Works</HashLink></li>
-                        <li>About Me</li>
-                        <li>Contact</li>
+                        <li><HashLink smooth to="/#about">About Me</HashLink></li>
+                        <li><HashLink smooth to="/#contact">Contact</HashLink></li>
                     </ul>
                 </div>
             </div>
