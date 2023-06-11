@@ -1,11 +1,11 @@
 import React from "react";
 import {HashLink} from "react-router-hash-link";
 import gd_banner from "../assets/img/gd_banner.png";
-import illustration_banner from "../assets/img/illustration_banner.jpg";
+import illustration_banner from "../assets/img/illustration_banner.png";
 import {SiAdobexd , SiAdobephotoshop , SiAdobeillustrator} from "react-icons/si";
 const Main = () => {
     return (
-        <div>
+        <div className="hidden md:block">
             <div className="flex">
                 <div className="flex">
                     <div className="z-10 pt-4 pl-10 absolute">
@@ -76,19 +76,47 @@ const Main = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-3 ml-24 mt-[6.6rem] scale-[85%]">
-                    <div className="max-w-sm rounded-[40px] ">
-                        <img src={illustration_banner} alt="" className="rounded-[40px]"/>
-                    </div>
-                    <div className="max-w-sm h-[636] rounded-[40px] bg-black">
-                        <img src={gd_banner} alt=""/>
-                    </div>
-                    <div className="max-w-sm h-[636] rounded-[40px] bg-black">
+                    <div className="max-w-sm rounded-[40px] group">
+                            <div className="relative">
+                                <img src={illustration_banner} alt="" className="rounded-[40px]"/>
+                                <HashLink smooth to="/illustrations">
+                                    <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
+                                            <div className="flex justify-center items-center h-full w-full">
+                                                <h1 className="text-3xl text-white arialb">Illustrations</h1>
+                                            </div>
+                                    </div>
+                                </HashLink>
+                            </div>
 
+                    </div>
+                    <div className="max-w-sm rounded-[40px] group">
+                        <div className="relative">
+                            <img src={gd_banner} alt="" className="rounded-[40px]"/>
+                            <HashLink smooth to="/graphicdesign">
+                                <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
+                                    <div className="flex justify-center items-center h-full w-full">
+                                        <h1 className="text-3xl text-white arialb">Graphic Design</h1>
+                                    </div>
+                                </div>
+                            </HashLink>
+                        </div>
+                    </div>
+                    <div className="max-w-sm rounded-[40px] group">
+                        <div className="relative">
+                            <img src={gd_banner} alt="" className="rounded-[40px]"/>
+                            <HashLink smooth to="/uiux">
+                                <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
+                                    <div className="flex justify-center items-center h-full w-full">
+                                        <h1 className="text-3xl text-white arialb">UI/UX</h1>
+                                    </div>
+                                </div>
+                            </HashLink>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div id="about" className="pt-14 mt-2 px-6 space-y-6">
+            <div id="about" className="pt-10 mt-2 px-6 space-y-6">
                 <div>
                     <h1 className="text-6xl arialb text-white">About Me</h1>
                 </div>
