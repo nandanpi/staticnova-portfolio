@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +15,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {font-family: "Arial Black"; src: url("//db.onlinewebfonts.com/t/8984ea7fcbebdcfe77fbbc1b86e7cfe6.eot"); src: url("//db.onlinewebfonts.com/t/8984ea7fcbebdcfe77fbbc1b86e7cfe6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8984ea7fcbebdcfe77fbbc1b86e7cfe6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8984ea7fcbebdcfe77fbbc1b86e7cfe6.woff") format("woff"), url("//db.onlinewebfonts.com/t/8984ea7fcbebdcfe77fbbc1b86e7cfe6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8984ea7fcbebdcfe77fbbc1b86e7cfe6.svg#Arial Black") format("svg"); }
+@font-face {font-family: "OCR A Extended"; src: url("//db.onlinewebfonts.com/t/fd6fa80f1e3345834599de891cca3f4c.eot"); src: url("//db.onlinewebfonts.com/t/fd6fa80f1e3345834599de891cca3f4c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fd6fa80f1e3345834599de891cca3f4c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fd6fa80f1e3345834599de891cca3f4c.woff") format("woff"), url("//db.onlinewebfonts.com/t/fd6fa80f1e3345834599de891cca3f4c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fd6fa80f1e3345834599de891cca3f4c.svg#OCR A Extended") format("svg"); }
+
+.ocra{
+  font-family: "OCR A Extended", sans-serif;
+}
+.arialb{
+    font-family: "Arial Black", sans-serif;
+}
+
