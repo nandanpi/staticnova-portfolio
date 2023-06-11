@@ -1,5 +1,7 @@
 import React from "react";
 import {HashLink} from "react-router-hash-link";
+import gd_banner from "../assets/img/gd_banner.png";
+import illustration_banner from "../assets/img/illustration_banner.jpg";
 
 const Main = () => {
     return (
@@ -19,7 +21,7 @@ const Main = () => {
                     </div>
                     <div className="flex justify-normal z-20 pl-[13rem] pt-4">
                         <div className="ocra text-white pt-[12rem]">
-                            <p className="text-7xl">Hi, I'm Staticnova</p>
+                            <p className="text-6xl">Hi, I'm Staticnova</p>
                             <p className="text-2xl">An Illustrator and graphic designer</p>
                         </div>
                     </div>
@@ -67,24 +69,28 @@ const Main = () => {
                 </div>
             </div>
 
-            <divi id="works">
+            <div className="pt-4" id="works">
                 <div className="flex">
                     <div className="px-6">
                         <h1 className="text-6xl arialb  text-white">Works</h1>
                     </div>
                 </div>
                 <div className="grid grid-cols-3 ml-24 mt-[11.4rem]">
-                    <div className="max-w-sm h-[636] rounded-[40px] border-2 bg-black">
-                        <span>Hello</span>
+                    <div className="max-w-sm h-[636] rounded-[40px] ">
+                        <img src={illustration_banner} alt="" className="rounded-[40px]"/>
                     </div>
                     <div className="max-w-sm h-[636] rounded-[40px] bg-black">
-                        <span>Hello</span>
+                        <img src={gd_banner} alt=""/>
                     </div>
                     <div className="max-w-sm h-[636] rounded-[40px] bg-black">
-                        <span>Hello</span>
+
                     </div>
                 </div>
-            </divi>
+            </div>
+
+            <div id="about">
+
+            </div>
         </div>
     );
 }
