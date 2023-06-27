@@ -43,25 +43,25 @@ const Illustrations = () => {
                                 <div
                                     className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black"></div>
                                 <h1 className="ocra text-3xl">Vector Illustrations</h1>
-                                <div className="grid grid-cols-3 max-w-7xl gap-12 py-10">
-                                    <img src={thisillus} alt="" className="pt-16"/>
-                                    <img src={preuniq} alt="" className="col-span-2"/>
-                                    <img src={here} alt=""/>
-                                    <img src={bold} alt="" className="pt-4"/>
-                                    <img src={kristina} alt=""/>
+                                <div className="grid grid-cols-3 max-w-7xl ml-16 space-x-10">
+                                    <img src={thisillus} alt="" className="max-h-[460px] my-14"/>
+                                    <img src={preuniq} alt="" className="col-span-2 max-h-[460px] ml-24 my-10"/>
+                                    <img src={here} alt="" className="max-h-[460px] "/>
+                                    <img src={bold} alt="" className="max-h-[460px]"/>
+                                    <img src={kristina} alt="" className="max-h-[460px]"/>
                                 </div>
                             </li>
                             <li className="mb-10 ml-4">
                                 <div
                                     className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black"></div>
                                 <h1 className="ocra text-3xl">Digital Art</h1>
-                                <div className="grid grid-cols-3 gap-12 py-12 max-w-7xl ">
-                                    <img src={haikyuu} alt="" className="border-opacity-0"/>
-                                    <img src={firstpage} alt=""/>
-                                    <img src={eren} alt="" className="pt-16"/>
-                                    <img src={mikey} alt=""/>
-                                    <img src={akkochan} alt=""/>
-                                    <img src={anya} alt="" className="py-12"/>
+                                <div className="grid grid-cols-3 gap-12 my-12 max-w-7xl ml-16">
+                                    <img src={haikyuu} alt="" className="max-h-[350px]"/>
+                                    <img src={firstpage} alt="" className="max-h-[350px]"/>
+                                    <img src={eren} alt="" className="max-h-[350px]"/>
+                                    <img src={mikey} alt="" className="max-h-[350px]"/>
+                                    <img src={akkochan} alt="" className="max-h-[350px]"/>
+                                    <img src={anya} alt="" className="max-h-[350px]"/>
                                 </div>
                             </li>
                             <li className="mb-10 ml-4">
