@@ -3,9 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     colors: {
-      'illustration': '#08113d',
       'white': '#ffffff',
-      'contactbutton': '#2E3763'
+      'black': '#070707',
+      'contactbutton': '#2E3763',
+      'back-2': '#EEEFF8',
     },
     extend: {},
   },
