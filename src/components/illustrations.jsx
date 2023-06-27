@@ -43,12 +43,12 @@ const Illustrations = () => {
                                 <div
                                     className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black"></div>
                                 <h1 className="ocra text-3xl">Vector Illustrations</h1>
-                                <div className="grid grid-cols-3 max-w-7xl ml-16 space-x-10">
+                                <div className="grid grid-cols-3 max-w-7xl ml-16 ">
                                     <img src={thisillus} alt="" className="max-h-[460px] my-14"/>
                                     <img src={preuniq} alt="" className="col-span-2 max-h-[460px] ml-24 my-10"/>
                                     <img src={here} alt="" className="max-h-[460px] "/>
-                                    <img src={bold} alt="" className="max-h-[460px]"/>
-                                    <img src={kristina} alt="" className="max-h-[460px]"/>
+                                    <img src={bold} alt="" className="max-h-[460px] ml-10"/>
+                                    <img src={kristina} alt="" className="max-h-[460px] ml-20"/>
                                 </div>
                             </li>
                             <li className="mb-10 ml-4">
