@@ -65,7 +65,7 @@ const Main = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-3 ml-24 mt-[6.6rem] scale-[85%]">
-                    <div className="max-w-sm rounded-[40px] group">
+                    <div className=" max-w-sm rounded-[40px] group px-5">
                             <div className="relative">
                                 <img src={illustration_banner} alt="" className="rounded-[40px]"/>
                                 <HashLink smooth to="/illustrations">
@@ -78,7 +78,7 @@ const Main = () => {
                             </div>
 
                     </div>
-                    <div className="max-w-sm rounded-[40px] group">
+                    <div className="max-w-sm rounded-[40px] group px-5">
                         <div className="relative">
                             <img src={gd_banner} alt="" className="rounded-[40px]"/>
                             <HashLink smooth to="/graphicdesign">
@@ -90,7 +90,7 @@ const Main = () => {
                             </HashLink>
                         </div>
                     </div>
-                    <div className="max-w-sm rounded-[40px] group">
+                    <div className="max-w-sm rounded-[40px] group px-5">
                         <div className="relative">
                             <img src={gd_banner} alt="" className="rounded-[40px]"/>
                             <HashLink smooth to="/uiux">
