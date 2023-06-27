@@ -23,7 +23,7 @@ const Illustrations = () => {
             <div>
                 <div className="flex justify-between">
                     <div className="px-10 py-6">
-                        <h1 className="text-4xl arialb">Staticnova</h1>
+                        <h1 className="text-4xl arialb"><HashLink to="/" >Staticnova</HashLink></h1>
                     </div>
                     <div className={!nav ? "px-10 py-6" : "hidden"}>
                         <HiMenu size={50} onClick={toggleNav} className="cursor-pointer"/>

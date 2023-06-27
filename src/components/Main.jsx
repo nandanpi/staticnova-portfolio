@@ -118,7 +118,7 @@ const Main = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex justify-center items-center pb-14">
+                <div className="flex justify-center items-center pb-12">
                     <ul className="flex space-x-24">
                         <li><SiAdobephotoshop size={70} className="text-white"/></li>
                         <li><SiAdobeillustrator size={70} className="text-white"/></li>
@@ -128,6 +128,23 @@ const Main = () => {
                 <div id="contact">
                     <div className="pb-14">
                         <h1 className="text-6xl arialb text-white">Contact</h1>
+                    </div>
+                    <div className="flex justify-center mx-auto w-7/12 md:max-w-4xl pb-[8rem]">
+                        <form action="https://getform.io/f/f57e8d00-2912-4a86-ac0a-82092cb72a80" method="POST" className="flex flex-col w-full md:w-7/12">
+                            <div className="space-y-3">
+                                <div>
+                                    <input type="text" name="name" placeholder="Name" className="p-2 bg-transparent border-2 focus:outline-none rounded-md text-black w-full"/>
+                                </div>
+                                <div>
+                                    <input type="email" name="email" placeholder="Email" className="p-2 bg-transparent border-2 focus:outline-none rounded-md text-black w-full"/>
+                                </div>
+                                <div>
+                        <textarea name="message" placeholder="Your message" rows="10"
+                                  className="w-full p-2  bg-transparent border-2 focus:outline-none resize-none rounded-md text-black "></textarea>
+                                </div>
+                                <button type="submit" className="px-2 py-1 bg-contactbutton text-white rounded-md hover:scale-125 duration-500">Work With Me</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
