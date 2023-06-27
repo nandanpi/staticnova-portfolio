@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {HiMenu} from "react-icons/hi";
-import {AiOutlineClose} from "react-icons/ai";
 import here from "../assets/img/here.png";
 import kristina from "../assets/img/kristina.png";
 import preuniq from "../assets/img/preuniq.png";
