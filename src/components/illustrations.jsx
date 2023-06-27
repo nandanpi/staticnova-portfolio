@@ -32,7 +32,7 @@ const Illustrations = () => {
                     </div>
                 </div>
                 <div className="flex">
-                    <div className=" flex ml-14 mb-20">
+                    <div className="flex ml-14 mb-20">
                         <ol className="relative border-l border-black">
                             <li className="mb-10 ml-4">
                                 <div
@@ -43,51 +43,25 @@ const Illustrations = () => {
                                 <div
                                     className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black"></div>
                                 <h1 className="ocra text-3xl">Vector Illustrations</h1>
-                                <div className="grid-cols-2 mx-16">
-                                    <div className="grid grid-cols-3  max-w-7xl justify-evenly py-10 gap-20">
-                                        <div>
-                                            <img src={thisillus} alt=""/>
-                                        </div>
-                                        <div className="col-span-2">
-                                            <img src={preuniq} alt=""/>
-                                        </div>
-                                        <div>
-                                            <img src={here} alt=""/>
-                                        </div>
-                                        <div>
-                                            <img src={bold} alt=""/>
-                                        </div>
-                                        <div>
-                                            <img src={kristina} alt=""/>
-                                        </div>
-                                    </div>
+                                <div className="grid grid-cols-3 max-w-7xl gap-12 py-10">
+                                    <img src={thisillus} alt=""/>
+                                    <img src={preuniq} alt="" className="col-span-2"/>
+                                    <img src={here} alt=""/>
+                                    <img src={bold} alt=""/>
+                                    <img src={kristina} alt=""/>
                                 </div>
                             </li>
                             <li className="mb-10 ml-4">
                                 <div
                                     className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black"></div>
                                 <h1 className="ocra text-3xl">Digital Art</h1>
-                                <div className="grid-cols-2 mx-16 space-y-24 pt-10">
-                                    <div className="grid grid-cols-3 gap-20">
-                                        <div>
-                                            <img src={haikyuu} alt=""   />
-                                        </div>
-                                        <div>
-                                            <img src={firstpage} alt=""/>
-                                        </div>
-                                        <div>
-                                            <img src={eren} alt=""/>
-                                        </div>
-                                        <div>
-                                            <img src={mikey} alt=""/>
-                                        </div>
-                                        <div>
-                                            <img src={akkochan} alt=""/>
-                                        </div>
-                                        <div>
-                                            <img src={anya} alt=""/>
-                                        </div>
-                                    </div>
+                                <div className="grid grid-cols-3 gap-12 py-12 max-w-7xl ">
+                                    <img src={haikyuu} alt="" className="border-opacity-0"/>
+                                    <img src={firstpage} alt=""/>
+                                    <img src={eren} alt=""/>
+                                    <img src={mikey} alt=""/>
+                                    <img src={akkochan} alt=""/>
+                                    <img src={anya} alt="" className="py-12"/>
                                 </div>
                             </li>
                             <li className="mb-10 ml-4">
