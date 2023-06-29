@@ -37,8 +37,8 @@ const Main = () => {
             <div className="flex flex-col">
                 <div className="flex">
                     <div className="flex">
-                        <div className="pl-[26rem] pt-[9.5rem] flex z-30">
-                            <HashLink smooth to="/#works"><img src={arrow} alt="" className="animate-bounce"/></HashLink>
+                        <div className="pl-[26rem] pt-[9.5rem] pb-8 flex z-30">
+                            <HashLink smooth to="/#works"><img src={arrow} alt="" className="animate-bounce w-[8rem] h-[8rem]"/></HashLink>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ const Main = () => {
                 <div>
                     <h1 className="text-6xl arialb text-white">About Me</h1>
                 </div>
-                <div className="flex justify-between py-20">
+                <div className="grid grid-cols-2 pt-20 pb-16">
                     <div className=" rounded-full h-[18rem] w-[18rem] ml-[6rem]">
                         <img src={pfp} alt=""/>
                     </div>
@@ -104,7 +104,7 @@ const Main = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex justify-center items-center pb-12">
+                <div className="flex justify-center items-center pb-8">
                     <ul className="flex space-x-24">
                         <li><SiAdobephotoshop size={70} className="text-white"/></li>
                         <li><SiAdobeillustrator size={70} className="text-white"/></li>

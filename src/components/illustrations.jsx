@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {HiMenu} from "react-icons/hi";
+import {AiOutlineClose} from "react-icons/ai";
 import here from "../assets/img/here.png";
 import kristina from "../assets/img/kristina.png";
 import preuniq from "../assets/img/preuniq.png";
@@ -70,6 +71,27 @@ const Illustrations = () => {
                             </li>
                         </ol>
                     </div>
+                </div>
+            </div>
+            <div className={nav ? "fixed z-50 top-0 right-0 w-screen h-screen backdrop-blur-lg" : "hidden"}>
+                <div className="flex w-full justify-end">
+                    <AiOutlineClose size={50} onClick={toggleNav} className="cursor-pointer text-black  mx-10 my-6"/>
+                </div>
+                <div className="flex text-black justify-center h-screen">
+                    <ul className="justify-center items-center space-y-5 mt-24 text-center">
+                        <li className="border-b-2 pb-5 border-b-black ">
+                            <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ocra">Home</HashLink>
+                        </li>
+                        <li className="border-b-2 pb-5 border-b-black ">
+                            <HashLink smooth to="/illustrations" onClick={toggleNav} className="text-4xl ocra">Illustrations</HashLink>
+                        </li>
+                        <li className="border-b-2 pb-5 border-b-black ">
+                            <HashLink smooth to="/gd" onClick={toggleNav} className="text-4xl ocra">Graphic Design</HashLink>
+                        </li>
+                        <li>
+                            <HashLink smooth to="/uiux" onClick={toggleNav} className="text-4xl ocra">UI/UX</HashLink>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </>

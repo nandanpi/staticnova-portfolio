@@ -10,9 +10,9 @@ function App() {
   return (
     <>
         <Routes>
-            <Route exact path="/" element={<><div className="bg-gradient-to-b from-[#030B31] to-[#33439C]"><Navbar /><Main /></div></>}></Route>
-            <Route exact path="/illustrations" element={<><div className="bg-back-2 text-white"><Illustrations /></div></>}></Route>
-            <Route exact path="/graphicdesign" element={<><Gd /></>}></Route>
+            <Route exact path="/" element={<><div className="bg-gradient-to-b from-[#030B31] to-[#33439C] w-full h-full"><Navbar /><Main /></div></>}></Route>
+            <Route exact path="/illustrations" element={<><div className="bg-back-2 text-white w-full h-full"><Illustrations /></div></>}></Route>
+            <Route exact path="/graphicdesign" element={<><div className="bg-back-2 text-white w-full h-full"><Gd /></div></>}></Route>
             <Route exact path="/uiux" element={<><Uiux /></>}></Route>
         </Routes>
     </>
