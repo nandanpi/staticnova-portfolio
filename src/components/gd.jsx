@@ -36,8 +36,8 @@ const Gd = () => {
                         <span className="ocra text-xl">Instagram carousels, Merchs, Logos, Thumbnails & more</span>
                     </div>
                     <div className="grid grid-rows-2 gap-10 my-4 pb-14">
-                        <img src={carpost} alt=""/>
-                        <img src={recruit} alt=""/>
+                        <HashLink smooth to="https://www.instagram.com/p/CmLp7-DB7AA/"><img src={carpost} alt="" className="hover:scale-105 duration-100"/></HashLink>
+                        <HashLink smooth to="https://www.instagram.com/p/CrQ2nGsJhFQ/"><img src={recruit} alt="" className="hover:scale-105 duration-100"/></HashLink>
                     </div>
                     <div className="grid grid-cols-2 gap-72 pb-14">
                         <img src={merchb} alt=""/>
