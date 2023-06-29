@@ -51,10 +51,10 @@ const Gd = () => {
                         <span className="text-4xl">Clubs, Organizations and clients</span>
                         <span className="text-xl">Most of my projects were a part of students' clubs in my university.</span>
                     </div>
-                    <div className="flex justify-evenly space-x-24 py-16">
-                        <img src={post} alt=""/>
-                        <img src={ghg} alt=""/>
-                        <img src={acmw} alt=""/>
+                    <div className="grid grid-cols-3 gap-72 py-16">
+                        <img src={post} alt="" className="object-fill"/>
+                        <img src={ghg} alt="" className="object-contain"/>
+                        <img src={acmw} alt="" className="object-contain"/>
                     </div>
                     <div>
                         <HashLink smooth to="/#contact"><span className="ocra text-3xl hover:text-4xl duration-100 pb-20">Contact</span></HashLink>
@@ -69,18 +69,18 @@ const Gd = () => {
                     <AiOutlineClose size={50} onClick={toggleNav} className="cursor-pointer text-black  mx-10 my-6"/>
                 </div>
                 <div className="flex text-black justify-center h-screen">
-                    <ul className="justify-center items-center space-y-5 mt-24 text-center">
+                    <ul className="justify-center items-center space-y-5 mt-24 text-center arialb">
                         <li className="border-b-2 pb-5 border-b-black ">
-                            <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ocra">Home</HashLink>
+                            <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ">Home</HashLink>
                         </li>
                         <li className="border-b-2 pb-5 border-b-black ">
-                            <HashLink smooth to="/illustrations" onClick={toggleNav} className="text-4xl ocra">Illustrations</HashLink>
+                            <HashLink smooth to="/illustrations" onClick={toggleNav} className="text-4xl ">Illustrations</HashLink>
                         </li>
                         <li className="border-b-2 pb-5 border-b-black ">
-                            <HashLink smooth to="/gd" onClick={toggleNav} className="text-4xl ocra">Graphic Design</HashLink>
+                            <HashLink smooth to="/graphicdesign#top" onClick={toggleNav} className="text-4xl ">Graphic Design</HashLink>
                         </li>
                         <li>
-                            <HashLink smooth to="/uiux" onClick={toggleNav} className="text-4xl ocra">UI/UX</HashLink>
+                            <HashLink smooth to="/uiux" onClick={toggleNav} className="text-4xl ">UI/UX</HashLink>
                         </li>
                     </ul>
                 </div>
