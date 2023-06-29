@@ -180,15 +180,65 @@ const Main = () => {
                     </div>
 
                     <div className="flex justify-center pb-14">
-                        <HashLink smooth to="/#works"><img src={arrow} alt="" className="w-[7rem] h-[7rem] animate-bounce"/></HashLink>
+                        <HashLink smooth to="/#works2"><img src={arrow} alt="" className="w-[7rem] h-[7rem] animate-bounce"/></HashLink>
                     </div>
 
-                    <div id="works">
+                    <div id="works2">
                         <div>
                             <span className="arialb text-3xl">Works</span>
                         </div>
-                        <div className="grid grid-rows-3 items-center">
-                            <img src={illustration_banner} alt="" className="max-w-[14rem]"/>
+                        <div className="flex justify-center">
+                            <div className="grid grid-rows-3 py-16 gap-10">
+                                <div className="relative">
+                                    <img src={illustration_banner} alt="" className="rounded-[40px] max-w-[14rem]"/>
+                                    <HashLink smooth to="/illustrations">
+                                        <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
+                                            <div className="flex justify-center items-center h-full w-full">
+                                                <h1 className="text-2xl text-white arialb">Illustrations</h1>
+                                            </div>
+                                        </div>
+                                    </HashLink>
+                                </div>
+                                <div className="relative">
+                                    <img src={gd_banner} alt="" className="rounded-[40px] max-w-[14rem]"/>
+                                    <HashLink smooth to="/illustrations">
+                                        <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
+                                            <div className="flex justify-center items-center h-full w-full">
+                                                <h1 className="text-2xl text-white arialb max-w-min text-center">Graphic Design</h1>
+                                            </div>
+                                        </div>
+                                    </HashLink>
+                                </div>
+                                <div className="relative">
+                                    <img src={gd_banner} alt="" className="rounded-[40px] max-w-[14rem]"/>
+                                    <HashLink smooth to="/illustrations">
+                                        <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
+                                            <div className="flex justify-center items-center h-full w-full">
+                                                <h1 className="text-2xl text-white arialb">UI/UX</h1>
+                                            </div>
+                                        </div>
+                                    </HashLink>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="about2">
+                            <div>
+                                <span className="arialb text-3xl">About Me</span>
+                            </div>
+                            <div className="py-16 flex justify-center">
+                                <img src={pfp} alt="" className="max-w-[14rem] "/>
+                            </div>
+                            <div className="pb-16 flex">
+                                <span className="ocra text-3xl max-w-sm text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae corporis ducimus iste non odit, officia quis quos veritatis? Dolor ducimus error molestiae mollitia, natus temporibus?</span>
+                            </div>
+                            <div className="flex justify-center pb-16">
+                                <ul className="flex space-x-10">
+                                    <li><SiAdobephotoshop size={50} className="text-white"/></li>
+                                    <li><SiAdobeillustrator size={50} className="text-white"/></li>
+                                    <li><SiAdobexd size={50} className="text-white"/></li>
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
