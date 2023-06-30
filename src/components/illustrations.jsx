@@ -54,7 +54,7 @@ const Illustrations = () => {
                         <div className="grid grid-rows-2">
                             <img src={haikyuu} alt="" className="row-span-2"/>
                         </div>
-                        <div className="grid grid-cols-2 gap-20">
+                        <div className="grid grid-cols-2 gap-24 pt-2">
                             <img src={mikey} alt=""/>
                             <img src={akkochan} alt=""/>
                             <img src={anya} alt=""/>
