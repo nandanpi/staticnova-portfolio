@@ -44,7 +44,7 @@ const Illustrations = () => {
                                 <div
                                     className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black"></div>
                                 <h1 className="ocra text-3xl">Vector Illustrations</h1>
-                                <div className="grid grid-cols-3 max-w-7xl ml-16 ">
+                                <div className="grid grid-cols-3 max-w-5xl ml-16 ">
                                     <img src={thisillus} alt="" className="max-h-[460px] my-14"/>
                                     <img src={preuniq} alt="" className="col-span-2 max-h-[460px] ml-24 my-10"/>
                                     <img src={here} alt="" className="max-h-[460px] "/>
@@ -56,7 +56,7 @@ const Illustrations = () => {
                                 <div
                                     className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black"></div>
                                 <h1 className="ocra text-3xl">Digital Art</h1>
-                                <div className="grid grid-cols-3 gap-12 my-12 max-w-7xl ml-16">
+                                <div className="grid grid-cols-3 gap-12 my-12 max-w-6xl ml-16">
                                     <img src={haikyuu} alt="" className="max-h-[350px]"/>
                                     <img src={firstpage} alt="" className="max-h-[350px]"/>
                                     <img src={eren} alt="" className="max-h-[350px]"/>
