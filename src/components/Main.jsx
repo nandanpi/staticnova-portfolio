@@ -191,6 +191,9 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
+                <div className="p-2 flex justify-center">
+                    <span className="text-white">© 2023 Yashmitha S. All Rights Reserved.</span>
+                </div>
             </div>
 
 
