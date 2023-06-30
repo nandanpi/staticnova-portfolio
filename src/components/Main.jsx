@@ -143,7 +143,7 @@ const Main = () => {
                         <div className="grid grid-cols-2 mx-10">
                             <div className="border-r border-r-bordergray ">
                                 <div className="max-w-sm my-6">
-                                    <form action="https://getform.io/f/1d08161d-d11d-4601-b3bd-5c8f6ff1e2e3" method="POST" >
+                                    <form action="https://getform.io/f/1d08161d-d11d-4601-b3bd-5c8f6ff1e2e3" method="POST" className="ocra">
                                         <div className="pb-3 pt-6">
                                             <input type="text" name="name" placeholder="Name" className="border-none p-2 rounded-md text-black w-full focus:outline-none" required={true}/>
                                         </div>
@@ -193,17 +193,17 @@ const Main = () => {
             </div>
 
 
-            <div className="block md:hidden text-white">
+            <div className="block md:hidden text-white z-0">
                 <div className="flex justify-between py-4 px-6">
                     <span className="arialb text-2xl">Staticnova</span>
                     <HiMenu size={40} onClick={toggleNav} className={nav ? "hidden" : "block"}/>
                 </div>
                 <div className="mx-8">
                     <div className="mt-20 pb-12">
-                        <div className="z-10 absolute">
+                        <div className="z- absolute z-10">
                             <img src={ellipse} alt=""/>
                         </div>
-                        <div className="ocra text-[3rem] grid grid-rows-3 px-7 pt-9 z-50">
+                        <div className="ocra text-[3rem] grid grid-rows-3 px-7 pt-9 z-20">
                             <span >Hi,</span>
                             <span>I'm</span>
                             <span>Staticnova</span>
