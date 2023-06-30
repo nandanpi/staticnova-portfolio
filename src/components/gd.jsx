@@ -11,6 +11,7 @@ import oplogo from "../assets/img/oplogo.png";
 import post from "../assets/img/post.png";
 import recruit from "../assets/img/recruit.png";
 import fluid from "../assets/img/fluid.png";
+import ScrollToTopButton from "./scrollToTop";
 
 const Gd = () => {
     const [nav,setNav] = useState(false);
@@ -85,6 +86,7 @@ const Gd = () => {
                     </ul>
                 </div>
             </div>
+            <div className="text-black"><ScrollToTopButton /></div>
         </>
     );
 }

@@ -9,6 +9,7 @@ import ellipse from "../assets/img/ellipse.png";
 import ui_banner from "../assets/img/banneruiux.png";
 import {HiMenu} from "react-icons/hi";
 import {SiGmail, SiBehance, SiInstagram, SiTwitter} from "react-icons/si";
+import ScrollToTopButton from "./scrollToTop";
 
 
 
@@ -282,6 +283,7 @@ const Main = () => {
                     </div>
                 </div>
             </div>
+            <div className="text-white"><ScrollToTopButton /></div>
         </>
     );
 }

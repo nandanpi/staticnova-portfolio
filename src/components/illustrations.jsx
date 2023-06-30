@@ -13,6 +13,7 @@ import anya from "../assets/img/anya_sketch.png";
 import bold from "../assets/img/bold.png";
 import mikey from "../assets/img/mikey.png";
 import {HashLink} from "react-router-hash-link";
+import ScrollToTopButton from "./scrollToTop";
 
 
 const Illustrations = () => {
@@ -94,6 +95,7 @@ const Illustrations = () => {
                     </ul>
                 </div>
             </div>
+            <div className="text-black"><ScrollToTopButton /></div>
         </>
     );
 }
