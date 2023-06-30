@@ -7,7 +7,6 @@ import preuniq from "../assets/img/preuniq.png";
 import thisillus from "../assets/img/thisillus.png";
 import akkochan from "../assets/img/akkochan.png";
 import eren from "../assets/img/eren_final.png";
-import firstpage from "../assets/img/first_page.png";
 import haikyuu from "../assets/img/haikyuu.png";
 import anya from "../assets/img/anya_sketch.png";
 import bold from "../assets/img/bold.png";
@@ -73,7 +72,7 @@ const Illustrations = () => {
                             <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ">Home</HashLink>
                         </li>
                         <li className="border-b-2 pb-5 border-b-black ">
-                            <HashLink smooth to="/illustrations" onClick={toggleNav} className="text-4xl ">Illustrations</HashLink>
+                            <HashLink smooth to="/illustrations#top" onClick={toggleNav} className="text-4xl ">Illustrations</HashLink>
                         </li>
                         <li className="border-b-2 pb-5 border-b-black ">
                             <HashLink smooth to="/graphicdesign#top" onClick={toggleNav} className="text-4xl ">Graphic Design</HashLink>

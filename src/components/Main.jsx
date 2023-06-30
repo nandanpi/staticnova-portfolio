@@ -26,7 +26,7 @@ const Main = () => {
                     <span className="arialb text-3xl">Staticnova</span>
                 </div>
                 <div className="px-6 py-4">
-                    <ul className="flex space-x-6 text-3xl ocra">
+                    <ul className="flex space-x-12 text-3xl ocra">
                         <li><HashLink smooth to="/#works">Works</HashLink></li>
                         <li><HashLink smooth to="/#about">About Me</HashLink></li>
                         <li><HashLink smooth to="/#contact">Contact</HashLink></li>
@@ -79,9 +79,9 @@ const Main = () => {
                         <div className="grid grid-cols-3 mt-6 scale-[85%] gap-16">
                             <div className=" max-w-sm rounded-[40px] group px-5">
                                 <div className="relative">
-                                    <img src={illustration_banner} alt="" className="rounded-[40px]"/>
-                                    <HashLink smooth to="/illustrations">
-                                        <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
+                                    <img src={illustration_banner} alt="" className="rounded-[40px] group-hover:scale-110 duration-200"/>
+                                    <HashLink smooth to="/illustrations#top">
+                                        <div className="absolute top-0 left-0 h-full w-full rounded-[40px] group-hover:scale-110 duration-200 bg-black opacity-60 flex">
                                             <div className="flex justify-center items-center h-full w-full">
                                                 <h1 className="text-3xl text-white arialb">Illustrations</h1>
                                             </div>
@@ -92,9 +92,9 @@ const Main = () => {
                             </div>
                             <div className="max-w-sm rounded-[40px] group px-5">
                                 <div className="relative">
-                                    <img src={gd_banner} alt="" className="rounded-[40px]"/>
+                                    <img src={gd_banner} alt="" className="rounded-[40px] group-hover:scale-110 duration-200"/>
                                     <HashLink  to="/graphicdesign#top">
-                                        <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
+                                        <div className="absolute top-0 left-0 h-full w-full rounded-[40px] group-hover:scale-110 duration-200 bg-black opacity-60 flex">
                                             <div className="flex justify-center items-center h-full w-full">
                                                 <h1 className="text-3xl text-white arialb">Graphic Design</h1>
                                             </div>
@@ -104,9 +104,9 @@ const Main = () => {
                             </div>
                             <div className="max-w-sm rounded-[40px] group px-5">
                                 <div className="relative">
-                                    <img src={ui_banner} alt="" className="rounded-[40px]"/>
+                                    <img src={ui_banner} alt="" className="rounded-[40px] group-hover:scale-110 duration-200"/>
                                     <HashLink smooth to="/uiux">
-                                        <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
+                                        <div className="absolute top-0 left-0 h-full w-full rounded-[40px] group-hover:scale-110 duration-200 bg-black opacity-60  flex">
                                             <div className="flex justify-center items-center h-full w-full">
                                                 <h1 className="text-3xl text-white arialb">UI/UX</h1>
                                             </div>
@@ -118,11 +118,11 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div id="about" className="pt-10 mt-14 px-6 space-y-6">
+                <div id="about" className="pt-9 mt-14 px-6 space-y-6">
                     <div>
                         <h1 className="text-6xl arialb text-white">About Me</h1>
                     </div>
-                    <div className="grid grid-cols-2 pt-20 pb-16 px-[10rem]">
+                    <div className="grid grid-cols-2 pt-10 pb-10 px-[10rem]">
                         <div className="max-w-[20rem] mr-10">
                             <img src={pfp} alt=""/>
                         </div>
@@ -130,7 +130,7 @@ const Main = () => {
                             <span className="text-3xl text-white ocra">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi deleniti eaque fugiat illo minus sunt. At dicta perferendis provident.</span>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center pb-8">
+                    <div className="flex justify-center items-center pb-14">
                         <ul className="flex space-x-24">
                             <li><SiAdobephotoshop size={70} className="text-white"/></li>
                             <li><SiAdobeillustrator size={70} className="text-white"/></li>
@@ -227,7 +227,7 @@ const Main = () => {
                             <div className="grid grid-rows-3 py-16 gap-10">
                                 <div className="relative">
                                     <img src={illustration_banner} alt="" className="rounded-[40px] max-w-[14rem]"/>
-                                    <HashLink smooth to="/illustrations">
+                                    <HashLink smooth to="/illustrations#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
                                                 <h1 className="text-2xl text-white arialb">Illustrations</h1>
