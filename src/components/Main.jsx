@@ -75,42 +75,44 @@ const Main = () => {
                             <h1 className="text-6xl arialb  text-white">Works</h1>
                         </div>
                     </div>
-                    <div className="grid grid-cols-3 mt-6 scale-[85%]">
-                        <div className=" max-w-sm rounded-[40px] group px-5">
-                            <div className="relative">
-                                <img src={illustration_banner} alt="" className="rounded-[40px]"/>
-                                <HashLink smooth to="/illustrations">
-                                    <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
-                                        <div className="flex justify-center items-center h-full w-full">
-                                            <h1 className="text-3xl text-white arialb">Illustrations</h1>
+                    <div className="flex justify-center">
+                        <div className="grid grid-cols-3 mt-6 scale-[85%] gap-16">
+                            <div className=" max-w-sm rounded-[40px] group px-5">
+                                <div className="relative">
+                                    <img src={illustration_banner} alt="" className="rounded-[40px]"/>
+                                    <HashLink smooth to="/illustrations">
+                                        <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
+                                            <div className="flex justify-center items-center h-full w-full">
+                                                <h1 className="text-3xl text-white arialb">Illustrations</h1>
+                                            </div>
                                         </div>
-                                    </div>
-                                </HashLink>
-                            </div>
+                                    </HashLink>
+                                </div>
 
-                        </div>
-                        <div className="max-w-sm rounded-[40px] group px-5">
-                            <div className="relative">
-                                <img src={gd_banner} alt="" className="rounded-[40px]"/>
-                                <HashLink  to="/graphicdesign#top">
-                                    <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
-                                        <div className="flex justify-center items-center h-full w-full">
-                                            <h1 className="text-3xl text-white arialb">Graphic Design</h1>
-                                        </div>
-                                    </div>
-                                </HashLink>
                             </div>
-                        </div>
-                        <div className="max-w-sm rounded-[40px] group px-5">
-                            <div className="relative">
-                                <img src={ui_banner} alt="" className="rounded-[40px]"/>
-                                <HashLink smooth to="/uiux">
-                                    <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
-                                        <div className="flex justify-center items-center h-full w-full">
-                                            <h1 className="text-3xl text-white arialb">UI/UX</h1>
+                            <div className="max-w-sm rounded-[40px] group px-5">
+                                <div className="relative">
+                                    <img src={gd_banner} alt="" className="rounded-[40px]"/>
+                                    <HashLink  to="/graphicdesign#top">
+                                        <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
+                                            <div className="flex justify-center items-center h-full w-full">
+                                                <h1 className="text-3xl text-white arialb">Graphic Design</h1>
+                                            </div>
                                         </div>
-                                    </div>
-                                </HashLink>
+                                    </HashLink>
+                                </div>
+                            </div>
+                            <div className="max-w-sm rounded-[40px] group px-5">
+                                <div className="relative">
+                                    <img src={ui_banner} alt="" className="rounded-[40px]"/>
+                                    <HashLink smooth to="/uiux">
+                                        <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
+                                            <div className="flex justify-center items-center h-full w-full">
+                                                <h1 className="text-3xl text-white arialb">UI/UX</h1>
+                                            </div>
+                                        </div>
+                                    </HashLink>
+                                </div>
                             </div>
                         </div>
                     </div>
