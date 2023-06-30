@@ -23,7 +23,7 @@ const Illustrations = () => {
     }
     return(
         <>
-            <div className="text-black">
+            <div className="text-white">
                 <div className="flex justify-between">
                     <div className="px-10 py-6">
                         <h1 className="text-4xl arialb"><HashLink to="/" >Staticnova</HashLink></h1>
@@ -32,45 +32,34 @@ const Illustrations = () => {
                         <HiMenu size={50} onClick={toggleNav} className="cursor-pointer"/>
                     </div>
                 </div>
-                <div className="flex">
-                    <div className="flex ml-14 mb-20">
-                        <ol className="relative border-l border-black">
-                            <li className="mb-10 ml-4">
-                                <div
-                                    className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black"></div>
-                                <h1 className="ocra text-3xl">ILLUSTRATIONS</h1>
-                            </li>
-                            <li className="mb-10 ml-4">
-                                <div
-                                    className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black"></div>
-                                <h1 className="ocra text-3xl">Vector Illustrations</h1>
-                                <div className="grid grid-cols-3 max-w-5xl ml-16 ">
-                                    <img src={thisillus} alt="" className="max-h-[460px] my-14"/>
-                                    <img src={preuniq} alt="" className="col-span-2 max-h-[460px] ml-24 my-10"/>
-                                    <img src={here} alt="" className="max-h-[460px] "/>
-                                    <img src={bold} alt="" className="max-h-[460px] ml-10"/>
-                                    <img src={kristina} alt="" className="max-h-[460px] ml-20"/>
-                                </div>
-                            </li>
-                            <li className="mb-10 ml-4">
-                                <div
-                                    className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black"></div>
-                                <h1 className="ocra text-3xl">Digital Art</h1>
-                                <div className="grid grid-cols-3 gap-12 my-12 max-w-6xl ml-16">
-                                    <img src={haikyuu} alt="" className="max-h-[350px]"/>
-                                    <img src={firstpage} alt="" className="max-h-[350px]"/>
-                                    <img src={eren} alt="" className="max-h-[350px]"/>
-                                    <img src={mikey} alt="" className="max-h-[350px]"/>
-                                    <img src={akkochan} alt="" className="max-h-[350px]"/>
-                                    <img src={anya} alt="" className="max-h-[350px]"/>
-                                </div>
-                            </li>
-                            <li className="mb-10 ml-4">
-                                <div
-                                    className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-black"></div>
-                                <p className="ocra text-3xl hover:text-4xl duration-100 cursor-pointer inline-block"><HashLink to="/#contact">Contact</HashLink></p>
-                            </li>
-                        </ol>
+
+                <div className="block pb-20">
+                    <div className="flex">
+                        <span className="ocra text-4xl mx-10 py-5">ILLUSTRATIONS</span>
+                    </div>
+                    <div className="flex justify-center">
+                        <span className="ocra text-4xl">Vector Illustrations</span>
+                    </div>
+                    <div className="py-10 grid grid-cols-3 mx-24 gap-20">
+                        <img src={thisillus} alt="" className="py-3 "/>
+                        <img src={preuniq} alt="" className="col-span-2"/>
+                        <img src={here} alt=""/>
+                        <img src={bold} alt=""/>
+                        <img src={kristina} alt=""/>
+                    </div>
+                    <div className="flex justify-center py-14">
+                        <span className="ocra text-4xl">Digital Art</span>
+                    </div>
+                    <div className="flex mx-24 space-x-16">
+                        <div className="grid grid-rows-2">
+                            <img src={haikyuu} alt="" className="row-span-2"/>
+                        </div>
+                        <div className="grid grid-cols-2 gap-20">
+                            <img src={mikey} alt=""/>
+                            <img src={akkochan} alt=""/>
+                            <img src={anya} alt=""/>
+                            <img src={eren} alt=""/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,7 +84,7 @@ const Illustrations = () => {
                     </ul>
                 </div>
             </div>
-            <div className="text-black"><ScrollToTopButton /></div>
+            <div className="text-white"><ScrollToTopButton /></div>
         </>
     );
 }
