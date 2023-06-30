@@ -5,8 +5,11 @@ import illustration_banner from "../assets/img/illustration_banner.png";
 import {SiAdobexd , SiAdobephotoshop , SiAdobeillustrator} from "react-icons/si";
 import pfp from "../assets/img/pfp.png";
 import arrow from "../assets/img/arrow-down.png";
-import ellipse from "../assets/img/ellipse.png"
+import ellipse from "../assets/img/ellipse.png";
+import ui_banner from "../assets/img/banneruiux.png";
 import {HiMenu} from "react-icons/hi";
+import {SiGmail, SiBehance, SiInstagram, SiTwitter} from "react-icons/si";
+
 
 
 
@@ -65,13 +68,13 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div className="pt-4" id="works">
+                <div className="pt-4 pb-12" id="works">
                     <div className="flex">
                         <div className="px-6 mt-5">
                             <h1 className="text-6xl arialb  text-white">Works</h1>
                         </div>
                     </div>
-                    <div className="grid grid-cols-3 ml-24 mt-[6.6rem] scale-[85%]">
+                    <div className="grid grid-cols-3 ml-24 mt-6 scale-[85%]">
                         <div className=" max-w-sm rounded-[40px] group px-5">
                             <div className="relative">
                                 <img src={illustration_banner} alt="" className="rounded-[40px]"/>
@@ -99,7 +102,7 @@ const Main = () => {
                         </div>
                         <div className="max-w-sm rounded-[40px] group px-5">
                             <div className="relative">
-                                <img src={gd_banner} alt="" className="rounded-[40px]"/>
+                                <img src={ui_banner} alt="" className="rounded-[40px]"/>
                                 <HashLink smooth to="/uiux">
                                     <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-0 group-hover:opacity-60  transition-all duration-300 flex">
                                         <div className="flex justify-center items-center h-full w-full">
@@ -112,7 +115,7 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div id="about" className="pt-10 mt-2 px-6 space-y-6">
+                <div id="about" className="pt-10 mt-14 px-6 space-y-6">
                     <div>
                         <h1 className="text-6xl arialb text-white">About Me</h1>
                     </div>
@@ -132,26 +135,57 @@ const Main = () => {
                             <li><SiAdobexd size={70} className="text-white"/></li>
                         </ul>
                     </div>
-                    <div id="contact">
+                    <div id="contact" className="pb-[8rem] pt-6">
                         <div className="pb-14">
                             <h1 className="text-6xl arialb text-white">Contact</h1>
                         </div>
-                        <div className="flex justify-center mx-auto w-7/12 md:max-w-4xl pb-[8rem]">
-                            <form action="https://getform.io/f/f57e8d00-2912-4a86-ac0a-82092cb72a80" method="POST" className="flex flex-col w-full md:w-7/12">
-                                <div className="space-y-3">
-                                    <div>
-                                        <input type="text" name="name" placeholder="Name" className="p-2 bg-transparent border-2 focus:outline-none rounded-md text-black w-full"/>
-                                    </div>
-                                    <div>
-                                        <input type="email" name="email" placeholder="Email" className="p-2 bg-transparent border-2 focus:outline-none rounded-md text-black w-full"/>
-                                    </div>
-                                    <div>
-                        <textarea name="message" placeholder="Your message" rows="10"
-                                  className="w-full p-2  bg-transparent border-2 focus:outline-none resize-none rounded-md text-black "></textarea>
-                                    </div>
-                                    <button type="submit" className="px-2 py-1 bg-contactbutton text-white rounded-md hover:scale-125 duration-500">Work With Me</button>
+                        <div className="grid grid-cols-2 mx-10">
+                            <div className="border-r border-r-bordergray ">
+                                <div className="max-w-sm my-6">
+                                    <form action="https://getform.io/f/1d08161d-d11d-4601-b3bd-5c8f6ff1e2e3" method="POST" >
+                                        <div className="pb-3 pt-6">
+                                            <input type="text" name="name" placeholder="Name" className="border-none p-2 rounded-md text-black w-full focus:outline-none"/>
+                                        </div>
+                                        <div className="pb-3">
+                                            <input type="text" name="email" placeholder="Email" className="border-none p-2 rounded-md text-black w-full focus:outline-none"/>
+                                        </div>
+                                        <div className="pb-3">
+                                            <textarea name="message" placeholder="Your Message" rows="10" className="border-none resize-none w-full rounded-md text-black focus:outline-none p-2"/>
+                                        </div>
+                                        <div>
+                                            <button type="submit" className="px-2 py-1 bg-contactbutton text-white rounded-md hover:scale-125 duration-500">Work With Me</button>
+                                        </div>
+                                    </form>
                                 </div>
-                            </form>
+                            </div>
+                            <div className="mx-20 my-10">
+                                <ul className="text-white grid grid-rows-4 gap-16">
+                                    <HashLink smooth to="mailto:yashmithashailesh@gmail.com" target="_blank">
+                                        <li className="flex space-x-14 hover:scale-105 duration-100">
+                                            <span><SiGmail size={50}/></span>
+                                            <span className="text-xl text-white ocra pt-2">yashmithashailesh@gmail.com</span>
+                                        </li>
+                                    </HashLink>
+                                    <HashLink smooth to="https://instagram.com/staticnovaa?igshid=NGExMmI2YTkyZg==" target="_blank">
+                                        <li className="flex space-x-14 hover:scale-105 duration-100">
+                                            <span><SiInstagram size={50}/></span>
+                                            <span className="text-xl text-white ocra pt-2">staticnovaa</span>
+                                        </li>
+                                    </HashLink>
+                                    <HashLink smooth to="https://www.behance.net/yashmitha?tracking_source=search_projects%7Cyashmitha" target="_blank">
+                                        <li className="flex space-x-14 hover:scale-105 duration-100">
+                                            <span><SiBehance size={50}/></span>
+                                            <span className="text-xl text-white ocra pt-2">yashmitha s</span>
+                                        </li>
+                                    </HashLink>
+                                    <HashLink smooth to="https://twitter.com/staticnovas?t=AmUV2UiDfLRtd0KoCsIaxw&s=09" target="_blank">
+                                        <li className="flex space-x-14 hover:scale-105 duration-100">
+                                            <span><SiTwitter size={50}/></span>
+                                            <span className="text-xl text-white ocra pt-2">staticnovas</span>
+                                        </li>
+                                    </HashLink>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -210,7 +244,7 @@ const Main = () => {
                                     </HashLink>
                                 </div>
                                 <div className="relative">
-                                    <img src={gd_banner} alt="" className="rounded-[40px] max-w-[14rem]"/>
+                                    <img src={ui_banner} alt="" className="rounded-[40px] max-w-[14rem]"/>
                                     <HashLink smooth to="/illustrations">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
@@ -222,7 +256,7 @@ const Main = () => {
                             </div>
                         </div>
 
-                        <div className="about2">
+                        <div id="about2">
                             <div>
                                 <span className="arialb text-3xl">About Me</span>
                             </div>
@@ -239,6 +273,10 @@ const Main = () => {
                                     <li><SiAdobexd size={50} className="text-white"/></li>
                                 </ul>
                             </div>
+                        </div>
+
+                        <div id="contact2">
+
                         </div>
 
                     </div>

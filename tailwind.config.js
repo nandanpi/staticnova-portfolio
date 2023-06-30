@@ -7,6 +7,7 @@ module.exports = {
       'black': '#070707',
       'contactbutton': '#2E3763',
       'back-2': '#EEEFF8',
+      'bordergray' : '#BFBCBC'
     },
     extend: {},
   },
