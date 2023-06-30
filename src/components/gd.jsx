@@ -20,7 +20,7 @@ const Gd = () => {
     }
     return(
         <>
-            <div className="text-black pb-10">
+            <div className="text-white pb-10">
                 <div className="flex justify-between">
                     <div className="px-10 py-6">
                         <h1 className="text-4xl arialb"><HashLink to="/" >Staticnova</HashLink></h1>
@@ -32,7 +32,7 @@ const Gd = () => {
 
                 <div className="px-20 py-4">
                     <div className="grid grid-rows-2">
-                        <span className="ocra text-4xl">Graphic Design</span>
+                        <span className="ocra text-4xl">GRAPHIC DESIGN</span>
                         <span className="ocra text-xl">Instagram carousels, Merchs, Logos, Thumbnails & more</span>
                     </div>
                     <div className="grid grid-rows-2 gap-10 py-4 pb-14">
@@ -56,15 +56,12 @@ const Gd = () => {
                         <img src={ghg} alt="" className="object-contain"/>
                         <img src={acmw} alt="" className="object-contain"/>
                     </div>
-                    <div className="flex justify-center">
-                        <HashLink smooth to="/#contact"><span className="ocra text-3xl hover:text-4xl duration-100 bg-black text-white px-10 py-2 rounded-full">Contact</span></HashLink>
-                    </div>
                 </div>
             </div>
 
             <div className={nav ? "fixed z-50 top-0 right-0 w-screen h-screen backdrop-blur-lg" : "hidden"}>
                 <div className="flex w-full justify-end">
-                    <AiOutlineClose size={50} onClick={toggleNav} className="cursor-pointer text-black  mx-10 my-6"/>
+                    <AiOutlineClose size={50} onClick={toggleNav} className="cursor-pointer text-white  mx-10 my-6"/>
                 </div>
                 <div className="flex text-black justify-center h-screen">
                     <ul className="justify-center items-center space-y-5 mt-24 text-center arialb">

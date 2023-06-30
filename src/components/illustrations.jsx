@@ -64,10 +64,10 @@ const Illustrations = () => {
             </div>
             <div className={nav ? "fixed z-50 top-0 right-0 w-screen h-screen backdrop-blur-lg" : "hidden"}>
                 <div className="flex w-full justify-end">
-                    <AiOutlineClose size={50} onClick={toggleNav} className="cursor-pointer text-black  mx-10 my-6"/>
+                    <AiOutlineClose size={50} onClick={toggleNav} className="cursor-pointer text-white  mx-10 my-6"/>
                 </div>
-                <div className="flex text-black justify-center h-screen">
-                    <ul className="justify-center items-center space-y-5 mt-24 text-center arialb">
+                <div className="flex justify-center text-black h-screen">
+                    <ul className="justify-center items-center space-y-5 mt-24 text-center ocra">
                         <li className="border-b-2 pb-5 border-b-black ">
                             <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ">Home</HashLink>
                         </li>
