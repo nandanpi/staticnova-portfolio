@@ -122,13 +122,12 @@ const Main = () => {
                     <div>
                         <h1 className="text-6xl arialb text-white">About Me</h1>
                     </div>
-                    <div className="grid grid-cols-2 pt-20 pb-16">
-                        <div className=" rounded-full h-[18rem] w-[18rem] ml-[6rem]">
+                    <div className="grid grid-cols-2 pt-20 pb-16 px-[10rem]">
+                        <div className="max-w-[20rem] mr-10">
                             <img src={pfp} alt=""/>
                         </div>
-                        <div>
-                            <p className="text-white ocra text-4xl max-w-3xl mr-[6rem] pt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda cumque distinctio itaque iure maiores minima omnis perferendis quis similique.
-                            </p>
+                        <div className="max-w-xl pt-16">
+                            <span className="text-3xl text-white ocra">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi deleniti eaque fugiat illo minus sunt. At dicta perferendis provident.</span>
                         </div>
                     </div>
                     <div className="flex justify-center items-center pb-8">
