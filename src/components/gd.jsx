@@ -40,21 +40,21 @@ const Gd = () => {
                         <HashLink smooth to="https://www.instagram.com/p/CrQ2nGsJhFQ/"><img src={recruit} alt="" className="hover:scale-105 duration-100"/></HashLink>
                     </div>
                     <div className="grid grid-cols-2 gap-72 pb-14">
-                        <img src={merchb} alt=""/>
-                        <img src={merchf} alt=""/>
+                        <img src={merchb} alt="" className="hover:scale-110 duration-200"/>
+                        <img src={merchf} alt="" className="hover:scale-110 duration-200"/>
                     </div>
                     <div className="grid grid-cols-2 pb-14 gap-20">
-                        <img src={fluid} alt=""/>
-                        <img src={oplogo} alt=""/>
+                        <img src={fluid} alt="" className="hover:scale-110 duration-200"/>
+                        <img src={oplogo} alt="" className="hover:scale-110 duration-200"/>
                     </div>
                     <div className="ocra space-y-4 grid grid-rows-2">
                         <span className="text-4xl">Clubs, Organizations and clients</span>
                         <span className="text-xl">Most of my projects were a part of students' clubs in my university.</span>
                     </div>
                     <div className="grid grid-cols-3 gap-72 py-16">
-                        <img src={post} alt="" className="object-fill"/>
-                        <img src={ghg} alt="" className="object-contain"/>
-                        <img src={acmw} alt="" className="object-contain"/>
+                        <img src={post} alt="" className="object-fill hover:scale-110 duration-200"/>
+                        <img src={ghg} alt="" className="object-contain hover:scale-110 duration-200"/>
+                        <img src={acmw} alt="" className="object-contain hover:scale-110 duration-200"/>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@ const Gd = () => {
                     </ul>
                 </div>
             </div>
-            <div className="text-black"><ScrollToTopButton /></div>
+            <div className="text-white"><ScrollToTopButton /></div>
         </>
     );
 }

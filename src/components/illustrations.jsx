@@ -40,24 +40,24 @@ const Illustrations = () => {
                         <span className="ocra text-4xl">Vector Illustrations</span>
                     </div>
                     <div className="py-10 grid grid-cols-3 mx-24 gap-20">
-                        <img src={thisillus} alt="" className="py-3 "/>
-                        <img src={preuniq} alt="" className="col-span-2"/>
-                        <img src={here} alt=""/>
-                        <img src={bold} alt=""/>
-                        <img src={kristina} alt=""/>
+                        <img src={thisillus} alt="" className="py-3 hover:scale-110 duration-200"/>
+                        <img src={preuniq} alt="" className="col-span-2 hover:scale-110 duration-200"/>
+                        <img src={here} alt="" className="hover:scale-110 duration-200"/>
+                        <img src={bold} alt="" className="hover:scale-110 duration-200"/>
+                        <img src={kristina} alt="" className="hover:scale-110 duration-200"/>
                     </div>
                     <div className="flex justify-center py-14">
                         <span className="ocra text-4xl">Digital Art</span>
                     </div>
                     <div className="flex mx-24 space-x-16">
                         <div className="grid grid-rows-2">
-                            <img src={haikyuu} alt="" className="row-span-2"/>
+                            <img src={haikyuu} alt="" className="row-span-2 hover:scale-110 duration-200" />
                         </div>
                         <div className="grid grid-cols-2 gap-24 pt-2">
-                            <img src={mikey} alt=""/>
-                            <img src={akkochan} alt=""/>
-                            <img src={anya} alt=""/>
-                            <img src={eren} alt=""/>
+                            <img src={mikey} alt="" className="hover:scale-110 duration-200"/>
+                            <img src={akkochan} alt="" className="hover:scale-110 duration-200"/>
+                            <img src={anya} alt="" className="hover:scale-110 duration-200"/>
+                            <img src={eren} alt="" className="hover:scale-110 duration-200"/>
                         </div>
                     </div>
                 </div>
