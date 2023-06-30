@@ -236,7 +236,7 @@ const Main = () => {
                                 </div>
                                 <div className="relative">
                                     <img src={gd_banner} alt="" className="rounded-[40px] max-w-[14rem]"/>
-                                    <HashLink smooth to="/illustrations">
+                                    <HashLink smooth to="/graphicdesign#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
                                                 <h1 className="text-2xl text-white arialb max-w-min text-center">Graphic Design</h1>
@@ -246,7 +246,7 @@ const Main = () => {
                                 </div>
                                 <div className="relative">
                                     <img src={ui_banner} alt="" className="rounded-[40px] max-w-[14rem]"/>
-                                    <HashLink smooth to="/illustrations">
+                                    <HashLink smooth to="/uiux">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
                                                 <h1 className="text-2xl text-white arialb">UI/UX</h1>
