@@ -145,13 +145,13 @@ const Main = () => {
                                 <div className="max-w-sm my-6">
                                     <form action="https://getform.io/f/1d08161d-d11d-4601-b3bd-5c8f6ff1e2e3" method="POST" >
                                         <div className="pb-3 pt-6">
-                                            <input type="text" name="name" placeholder="Name" className="border-none p-2 rounded-md text-black w-full focus:outline-none"/>
+                                            <input type="text" name="name" placeholder="Name" className="border-none p-2 rounded-md text-black w-full focus:outline-none" required={true}/>
                                         </div>
                                         <div className="pb-3">
-                                            <input type="text" name="email" placeholder="Email" className="border-none p-2 rounded-md text-black w-full focus:outline-none"/>
+                                            <input type="text" name="email" placeholder="Email" className="border-none p-2 rounded-md text-black w-full focus:outline-none" required={true}/>
                                         </div>
                                         <div className="pb-3">
-                                            <textarea name="message" placeholder="Your Message" rows="10" className="border-none resize-none w-full rounded-md text-black focus:outline-none p-2"/>
+                                            <textarea name="message" placeholder="Your Message" rows="10" className="border-none resize-none w-full rounded-md text-black focus:outline-none p-2" required={true}/>
                                         </div>
                                         <div>
                                             <button type="submit" className="px-2 py-1 bg-contactbutton text-white rounded-md hover:scale-125 duration-500">Work With Me</button>
@@ -283,13 +283,13 @@ const Main = () => {
                             <div className="pt-16 pb-10 flex justify-center">
                                 <form action="https://getform.io/f/1d08161d-d11d-4601-b3bd-5c8f6ff1e2e3" method="POST" >
                                     <div className="pb-3 pt-6">
-                                        <input type="text" name="name" placeholder="Name" className="border-none p-2 rounded-md text-black w-full focus:outline-none"/>
+                                        <input type="text" name="name" placeholder="Name" className="border-none p-2 rounded-md text-black w-full focus:outline-none" required={true}/>
                                     </div>
                                     <div className="pb-3">
-                                        <input type="text" name="email" placeholder="Email" className="border-none p-2 rounded-md text-black w-full focus:outline-none"/>
+                                        <input type="text" name="email" placeholder="Email" className="border-none p-2 rounded-md text-black w-full focus:outline-none" required={true}/>
                                     </div>
                                     <div className="pb-3">
-                                        <textarea name="message" placeholder="Your Message" rows="10" className="border-none resize-none w-full rounded-md text-black focus:outline-none p-2"/>
+                                        <textarea name="message" placeholder="Your Message" rows="10" className="border-none resize-none w-full rounded-md text-black focus:outline-none p-2" required={true}/>
                                     </div>
                                     <div>
                                         <button type="submit" className="px-2 py-1 bg-contactbutton text-white rounded-md hover:scale-125 duration-500">Work With Me</button>
