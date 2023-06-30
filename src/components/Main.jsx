@@ -304,25 +304,25 @@ const Main = () => {
                                     <HashLink smooth to="mailto:yashmithashailesh@gmail.com" target="_blank">
                                         <li className="flex space-x-6 hover:scale-105 duration-100">
                                             <span><SiGmail size={30}/></span>
-                                            <span className="text-md text-white ocra pt-2">yashmithashailesh@gmail.com</span>
+                                            <span className="text-md text-white ocra pt-1">yashmithashailesh@gmail.com</span>
                                         </li>
                                     </HashLink>
                                     <HashLink smooth to="https://instagram.com/staticnovaa?igshid=NGExMmI2YTkyZg==" target="_blank">
                                         <li className="flex space-x-6 hover:scale-105 duration-100">
                                             <span><SiInstagram size={30}/></span>
-                                            <span className="text-md text-white ocra pt-2">staticnovaa</span>
+                                            <span className="text-md text-white ocra pt-1">staticnovaa</span>
                                         </li>
                                     </HashLink>
                                     <HashLink smooth to="https://www.behance.net/yashmitha?tracking_source=search_projects%7Cyashmitha" target="_blank">
                                         <li className="flex space-x-6 hover:scale-105 duration-100">
                                             <span><SiBehance size={30}/></span>
-                                            <span className="text-md text-white ocra pt-2">yashmitha s</span>
+                                            <span className="text-md text-white ocra pt-1">yashmitha s</span>
                                         </li>
                                     </HashLink>
                                     <HashLink smooth to="https://twitter.com/staticnovas?t=AmUV2UiDfLRtd0KoCsIaxw&s=09" target="_blank">
                                         <li className="flex space-x-6 hover:scale-105 duration-100">
                                             <span><SiTwitter size={30}/></span>
-                                            <span className="text-md text-white ocra pt-2">staticnovas</span>
+                                            <span className="text-md text-white ocra pt-1">staticnovas</span>
                                         </li>
                                     </HashLink>
                                 </ul>
