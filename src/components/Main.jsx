@@ -277,7 +277,56 @@ const Main = () => {
                         </div>
 
                         <div id="contact2">
-
+                            <div>
+                                <span className="arialb text-3xl">Contact</span>
+                            </div>
+                            <div className="pt-16 pb-10 flex justify-center">
+                                <form action="https://getform.io/f/1d08161d-d11d-4601-b3bd-5c8f6ff1e2e3" method="POST" >
+                                    <div className="pb-3 pt-6">
+                                        <input type="text" name="name" placeholder="Name" className="border-none p-2 rounded-md text-black w-full focus:outline-none"/>
+                                    </div>
+                                    <div className="pb-3">
+                                        <input type="text" name="email" placeholder="Email" className="border-none p-2 rounded-md text-black w-full focus:outline-none"/>
+                                    </div>
+                                    <div className="pb-3">
+                                        <textarea name="message" placeholder="Your Message" rows="10" className="border-none resize-none w-full rounded-md text-black focus:outline-none p-2"/>
+                                    </div>
+                                    <div>
+                                        <button type="submit" className="px-2 py-1 bg-contactbutton text-white rounded-md hover:scale-125 duration-500">Work With Me</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div className="flex justify-center pb-10">
+                                <hr className="border w-[16rem] flex justify-center rounded-full border-bordergray"/>
+                            </div>
+                            <div className="mx-4 pb-16">
+                                <ul className="text-white grid grid-rows-4 gap-16">
+                                    <HashLink smooth to="mailto:yashmithashailesh@gmail.com" target="_blank">
+                                        <li className="flex space-x-6 hover:scale-105 duration-100">
+                                            <span><SiGmail size={30}/></span>
+                                            <span className="text-md text-white ocra pt-2">yashmithashailesh@gmail.com</span>
+                                        </li>
+                                    </HashLink>
+                                    <HashLink smooth to="https://instagram.com/staticnovaa?igshid=NGExMmI2YTkyZg==" target="_blank">
+                                        <li className="flex space-x-6 hover:scale-105 duration-100">
+                                            <span><SiInstagram size={30}/></span>
+                                            <span className="text-md text-white ocra pt-2">staticnovaa</span>
+                                        </li>
+                                    </HashLink>
+                                    <HashLink smooth to="https://www.behance.net/yashmitha?tracking_source=search_projects%7Cyashmitha" target="_blank">
+                                        <li className="flex space-x-6 hover:scale-105 duration-100">
+                                            <span><SiBehance size={30}/></span>
+                                            <span className="text-md text-white ocra pt-2">yashmitha s</span>
+                                        </li>
+                                    </HashLink>
+                                    <HashLink smooth to="https://twitter.com/staticnovas?t=AmUV2UiDfLRtd0KoCsIaxw&s=09" target="_blank">
+                                        <li className="flex space-x-6 hover:scale-105 duration-100">
+                                            <span><SiTwitter size={30}/></span>
+                                            <span className="text-md text-white ocra pt-2">staticnovas</span>
+                                        </li>
+                                    </HashLink>
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
