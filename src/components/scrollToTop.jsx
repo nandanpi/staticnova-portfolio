@@ -26,7 +26,7 @@ const ScrollToTopButton = () => {
       onClick={handleClick}
       className={`${
         showButton ? "opacity-100" : "opacity-0"
-      } fixed bottom-6 right-6 bg-gray-800 p-3 rounded-full transition-opacity duration-300 ease-in-out`}
+      } fixed bottom-6 right-6 p-3 rounded-full transition-opacity duration-300 ease-in-out`}
     >
       <ChevronUpIcon className="h-8 w-8"/>
     </button>
