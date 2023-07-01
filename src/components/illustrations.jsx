@@ -13,6 +13,8 @@ import bold from "../assets/img/bold.png";
 import mikey from "../assets/img/mikey.png";
 import {HashLink} from "react-router-hash-link";
 import ScrollToTopButton from "./scrollToTop";
+import ellipse from "../assets/svg/Ellipse.svg";
+import arrow from "../assets/svg/arrow.svg";
 
 
 const Illustrations = () => {
@@ -24,20 +26,35 @@ const Illustrations = () => {
         <>
             <div className="text-white">
                 <div className="flex justify-between">
-                    <div className="px-10 py-6">
-                        <h1 className="text-4xl arialb"><HashLink to="/" >Staticnova</HashLink></h1>
+                    <div className="px-10 pt-6">
+                        <h1 className="text-4xl logo"><HashLink to="/" >Staticnova</HashLink></h1>
                     </div>
-                    <div className={!nav ? "px-10 py-6" : "hidden"}>
+                    <div className={!nav ? "px-10 pt-6" : "hidden"}>
                         <HiMenu size={50} onClick={toggleNav} className="cursor-pointer"/>
                     </div>
                 </div>
-
                 <div className="block pb-20">
                     <div className="flex">
-                        <span className="ocra text-4xl mx-10 py-5">ILLUSTRATIONS</span>
+                        <div className="flex w-screen">
+                            <div className="flex justify-center items-center  w-full mt-64 z-20">
+                                <div className="grid grid-rows-2 text-center">
+                                    <span className="text-white text-8xl gtek">illustrations</span>
+                                    <span className="text-white text-2xl ocra">Vector illustrations, digital arts & anime fan arts</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="absolute z-10 flex justify-center w-full pt-36">
+                            <img src={ellipse} alt=""/>
+                        </div>
                     </div>
-                    <div className="flex justify-center">
-                        <span className="ocra text-4xl">Vector Illustrations</span>
+                    <div className="mt-16 mb-2 animate-bounce flex justify-center">
+                        <HashLink smooth to="/illustrations#illus">
+                            <img src={arrow} alt=""/>
+                        </HashLink>
+                    </div>
+
+                    <div className="flex justify-center pt-20 pb-10" id="illus">
+                        <span className="bord text-4xl">Vector Illustrations</span>
                     </div>
                     <div className="py-10 grid grid-cols-3 mx-24 gap-20">
                         <img src={thisillus} alt="" className="py-3 hover:scale-110 duration-200"/>
@@ -47,7 +64,7 @@ const Illustrations = () => {
                         <img src={kristina} alt="" className="hover:scale-110 duration-200"/>
                     </div>
                     <div className="flex justify-center py-14">
-                        <span className="ocra text-4xl">Digital Art</span>
+                        <span className="bord text-4xl">Digital Art</span>
                     </div>
                     <div className="flex mx-24 space-x-16">
                         <div className="grid grid-rows-2">

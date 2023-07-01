@@ -4,12 +4,12 @@ import gd_banner from "../assets/img/gd_banner.png";
 import illustration_banner from "../assets/img/illustration_banner.png";
 import {SiAdobexd , SiAdobephotoshop , SiAdobeillustrator} from "react-icons/si";
 import pfp from "../assets/img/pfp.png";
-import arrow from "../assets/img/arrow-down.png";
-import ellipse from "../assets/img/ellipse.png";
 import ui_banner from "../assets/img/banneruiux.png";
 import {HiMenu} from "react-icons/hi";
 import {SiGmail, SiBehance, SiInstagram, SiTwitter} from "react-icons/si";
 import ScrollToTopButton from "./scrollToTop";
+import ellipse from "../assets/svg/Ellipse.svg";
+import arrow from "../assets/svg/arrow.svg";
 
 
 
@@ -23,12 +23,12 @@ const Main = () => {
         <>
             <div className="hidden md:flex justify-between text-white">
                 <div className="px-6 py-4">
-                    <span className="arialb text-3xl">Staticnova</span>
+                    <span className="logo text-4xl">Staticnova</span>
                 </div>
                 <div className="px-6 py-4">
-                    <ul className="flex space-x-12 text-3xl ocra">
+                    <ul className="flex space-x-12 text-2xl bord">
                         <li><HashLink smooth to="/#works">Works</HashLink></li>
-                        <li><HashLink smooth to="/#about">About Me</HashLink></li>
+                        <li><HashLink smooth to="/#about">About</HashLink></li>
                         <li><HashLink smooth to="/#contact">Contact</HashLink></li>
                     </ul>
                 </div>
@@ -37,42 +37,27 @@ const Main = () => {
 
             <div className="hidden md:block">
                 <div className="flex">
-                    <div className="flex">
-                        <div className="z-10 pt-4 pl-10 absolute">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="298" height="278" viewBox="0 0 298 278" className="scale-75">
-                                <defs>
-                                    <linearGradient id="linear-gradient" x1="1.071" y1="1.077" x2="0.206" y2="0.388" gradientUnits="objectBoundingBox">
-                                        <stop offset="0" stopColor="#951cd1"/>
-                                        <stop offset="1" stopColor="#2222b9"/>
-                                    </linearGradient>
-                                </defs>
-                                <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="149" cy="139" rx="149" ry="139" opacity="0.79" fill="url(#linear-gradient)"/>
-                            </svg>
-                        </div>
-                        <div className="flex justify-normal z-20 pl-[13rem] pt-4">
-                            <div className="ocra text-white pt-[12rem]">
-                                <p className="text-6xl">Hi, I'm Staticnova</p>
-                                <p className="text-2xl">An Illustrator and graphic designer</p>
+                    <div className="flex w-screen">
+                        <div className="flex justify-center items-center  w-full mt-64 z-20">
+                            <div className="grid grid-rows-2 text-center">
+                                <span className="text-white text-8xl gtek">staticnova</span>
+                                <span className="text-white text-2xl ocra">An Illustrator and Graphic Designer</span>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div className="flex flex-col">
-                    <div className="flex">
-                        <div className="flex">
-                            <div className="pl-[26rem] pt-[9.5rem] pb-8 flex z-30">
-                                <HashLink smooth to="/#works"><img src={arrow} alt="" className="animate-bounce w-[8rem] h-[8rem]"/></HashLink>
-                            </div>
-                        </div>
+                    <div className="absolute z-10 flex justify-center w-full pt-36">
+                        <img src={ellipse} alt=""/>
                     </div>
                 </div>
-
+                <div className="mt-16 animate-bounce flex justify-center">
+                    <HashLink smooth to="/#works">
+                        <img src={arrow} alt=""/>
+                    </HashLink>
+                </div>
                 <div className="pt-4 pb-12" id="works">
                     <div className="flex">
                         <div className="px-6 mt-5">
-                            <h1 className="text-6xl arialb  text-white">Works</h1>
+                            <h1 className="text-6xl bord  text-white">Works</h1>
                         </div>
                     </div>
                     <div className="flex justify-center">
@@ -83,7 +68,7 @@ const Main = () => {
                                     <HashLink smooth to="/illustrations#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] group-hover:scale-110 duration-200 bg-black opacity-60 flex">
                                             <div className="flex justify-center items-center h-full w-full">
-                                                <h1 className="text-3xl text-white arialb">Illustrations</h1>
+                                                <h1 className="text-3xl text-white bord">Illustrations</h1>
                                             </div>
                                         </div>
                                     </HashLink>
@@ -96,7 +81,7 @@ const Main = () => {
                                     <HashLink  to="/graphicdesign#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] group-hover:scale-110 duration-200 bg-black opacity-60 flex">
                                             <div className="flex justify-center items-center h-full w-full">
-                                                <h1 className="text-3xl text-white arialb">Graphic Design</h1>
+                                                <h1 className="text-3xl text-white bord">Graphic Design</h1>
                                             </div>
                                         </div>
                                     </HashLink>
@@ -108,7 +93,7 @@ const Main = () => {
                                     <HashLink smooth to="/uiux">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] group-hover:scale-110 duration-200 bg-black opacity-60  flex">
                                             <div className="flex justify-center items-center h-full w-full">
-                                                <h1 className="text-3xl text-white arialb">UI/UX</h1>
+                                                <h1 className="text-3xl text-white bord">UI/UX</h1>
                                             </div>
                                         </div>
                                     </HashLink>
@@ -120,7 +105,7 @@ const Main = () => {
 
                 <div id="about" className="pt-9 mt-14 px-6 space-y-6">
                     <div>
-                        <h1 className="text-6xl arialb text-white">About Me</h1>
+                        <h1 className="text-6xl bord text-white">About Me</h1>
                     </div>
                     <div className="grid grid-cols-2 pt-10 pb-10 px-[10rem]">
                         <div className="max-w-[20rem] mr-10">
@@ -139,7 +124,7 @@ const Main = () => {
                     </div>
                     <div id="contact" className="pb-[8rem] pt-6">
                         <div className="pb-14">
-                            <h1 className="text-6xl arialb text-white">Contact</h1>
+                            <h1 className="text-6xl bord text-white">Contact</h1>
                         </div>
                         <div className="grid grid-cols-2 mx-10">
                             <div className="border-r border-r-bordergray ">
@@ -164,26 +149,26 @@ const Main = () => {
                                 <ul className="text-white grid grid-rows-4 gap-16">
                                     <HashLink smooth to="mailto:yashmithashailesh@gmail.com" target="_blank">
                                         <li className="flex space-x-14 hover:scale-105 duration-100">
-                                            <span><SiGmail size={50}/></span>
-                                            <span className="text-xl text-white ocra pt-2">yashmithashailesh@gmail.com</span>
+                                            <span><SiGmail size={40}/></span>
+                                            <span className="text-xl text-white ocra pt-1">yashmithashailesh@gmail.com</span>
                                         </li>
                                     </HashLink>
                                     <HashLink smooth to="https://instagram.com/staticnovaa?igshid=NGExMmI2YTkyZg==" target="_blank">
                                         <li className="flex space-x-14 hover:scale-105 duration-100">
-                                            <span><SiInstagram size={50}/></span>
-                                            <span className="text-xl text-white ocra pt-2">staticnovaa</span>
+                                            <span><SiInstagram size={40}/></span>
+                                            <span className="text-xl text-white ocra pt-1">staticnovaa</span>
                                         </li>
                                     </HashLink>
                                     <HashLink smooth to="https://www.behance.net/yashmitha?tracking_source=search_projects%7Cyashmitha" target="_blank">
                                         <li className="flex space-x-14 hover:scale-105 duration-100">
-                                            <span><SiBehance size={50}/></span>
-                                            <span className="text-xl text-white ocra pt-2">yashmitha s</span>
+                                            <span><SiBehance size={40}/></span>
+                                            <span className="text-xl text-white ocra pt-1">yashmitha s</span>
                                         </li>
                                     </HashLink>
                                     <HashLink smooth to="https://twitter.com/staticnovas?t=AmUV2UiDfLRtd0KoCsIaxw&s=09" target="_blank">
                                         <li className="flex space-x-14 hover:scale-105 duration-100">
-                                            <span><SiTwitter size={50}/></span>
-                                            <span className="text-xl text-white ocra pt-2">staticnovas</span>
+                                            <span><SiTwitter size={40}/></span>
+                                            <span className="text-xl text-white ocra pt-1">staticnovas</span>
                                         </li>
                                     </HashLink>
                                 </ul>
@@ -199,7 +184,7 @@ const Main = () => {
 
             <div className="block md:hidden text-white z-0">
                 <div className="flex justify-between py-4 px-6">
-                    <span className="arialb text-2xl">Staticnova</span>
+                    <span className="logo text-2xl">Staticnova</span>
                     <HiMenu size={40} onClick={toggleNav} className={nav ? "hidden" : "block"}/>
                 </div>
                 <div className="mx-8">
@@ -224,7 +209,7 @@ const Main = () => {
 
                     <div id="works2">
                         <div>
-                            <span className="arialb text-3xl">Works</span>
+                            <span className="bord text-3xl">Works</span>
                         </div>
                         <div className="flex justify-center">
                             <div className="grid grid-rows-3 py-16 gap-10">
@@ -233,7 +218,7 @@ const Main = () => {
                                     <HashLink smooth to="/illustrations#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
-                                                <h1 className="text-2xl text-white arialb">Illustrations</h1>
+                                                <h1 className="text-2xl text-white bord">Illustrations</h1>
                                             </div>
                                         </div>
                                     </HashLink>
@@ -243,7 +228,7 @@ const Main = () => {
                                     <HashLink smooth to="/graphicdesign#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
-                                                <h1 className="text-2xl text-white arialb max-w-min text-center">Graphic Design</h1>
+                                                <h1 className="text-2xl text-white bord max-w-min text-center">Graphic Design</h1>
                                             </div>
                                         </div>
                                     </HashLink>
@@ -253,7 +238,7 @@ const Main = () => {
                                     <HashLink smooth to="/uiux">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
-                                                <h1 className="text-2xl text-white arialb">UI/UX</h1>
+                                                <h1 className="text-2xl text-white bord">UI/UX</h1>
                                             </div>
                                         </div>
                                     </HashLink>
@@ -263,7 +248,7 @@ const Main = () => {
 
                         <div id="about2">
                             <div>
-                                <span className="arialb text-3xl">About Me</span>
+                                <span className="bord text-3xl">About Me</span>
                             </div>
                             <div className="py-16 flex justify-center">
                                 <img src={pfp} alt="" className="max-w-[14rem] "/>
@@ -282,7 +267,7 @@ const Main = () => {
 
                         <div id="contact2">
                             <div>
-                                <span className="arialb text-3xl">Contact</span>
+                                <span className="bord text-3xl">Contact</span>
                             </div>
                             <div className="pt-16 pb-10 flex justify-center">
                                 <form action="https://getform.io/f/1d08161d-d11d-4601-b3bd-5c8f6ff1e2e3" method="POST" >
