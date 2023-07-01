@@ -5,7 +5,7 @@ import {HashLink} from "react-router-hash-link";
 const NotFound = () => {
     return(
         <>
-            <div className="flex justify-center ">
+            <div className="flex justify-center pt-14">
                 <img src={image} alt=""/>
             </div>
             <div className="flex justify-center">

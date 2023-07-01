@@ -3,7 +3,7 @@ import {HashLink} from "react-router-hash-link";
 import {HiMenu} from "react-icons/hi";
 import {AiOutlineClose} from "react-icons/ai";
 
-const Navbar = () => {
+const Navbar2 = () => {
     const [nav,setNav] = useState(false);
     function toggleNav(){
         setNav(!nav);
@@ -16,9 +16,10 @@ const Navbar = () => {
                 </div>
                 <div className="px-6 py-4">
                     <ul className="flex space-x-12 text-2xl bord">
-                        <li><HashLink smooth to="/#works">Works</HashLink></li>
-                        <li><HashLink smooth to="/#about">About</HashLink></li>
-                        <li><HashLink smooth to="/#contact">Contact</HashLink></li>
+                        <li><HashLink smooth to="/">Home</HashLink></li>
+                        <li><HashLink smooth to="/illustrations#top">Illustrations</HashLink></li>
+                        <li><HashLink smooth to="/graphicdesign#top">Graphic Design</HashLink></li>
+                        <li><HashLink smooth to="/uiux#top">UI/UX</HashLink></li>
                     </ul>
                 </div>
             </div>
@@ -47,19 +48,25 @@ const Navbar = () => {
                         {/*    <HashLink smooth to="/uiux" onClick={toggleNav} className="text-4xl ">UI/UX</HashLink>*/}
                         {/*</li>*/}
                         <li className="py-2">
-                            <HashLink smooth to="/#works2" onClick={toggleNav} className="text-4xl ">Works</HashLink>
+                            <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ">Home</HashLink>
                         </li>
                         <div className="flex justify-center">
                             <hr className="w-80 p-[2px] bg-white rounded-full"/>
                         </div>
                         <li className="py-2">
-                            <HashLink smooth to="/#about2" onClick={toggleNav} className="text-4xl ">About</HashLink>
+                            <HashLink smooth to="/illustrations#top" onClick={toggleNav} className="text-4xl ">Illustrations</HashLink>
                         </li>
                         <div className="flex justify-center">
                             <hr className="w-80 p-[2px] bg-white rounded-full"/>
                         </div>
                         <li className="py-2">
-                            <HashLink smooth to="/#contact2" onClick={toggleNav} className="text-4xl ">Contact</HashLink>
+                            <HashLink smooth to="/graphicdesign#top" onClick={toggleNav} className="text-4xl ">Graphic Design</HashLink>
+                        </li>
+                        <div className="flex justify-center">
+                            <hr className="w-80 p-[2px] bg-white rounded-full"/>
+                        </div>
+                        <li>
+                            <HashLink smooth to="/uiux" onClick={toggleNav} className="text-4xl ">UI/UX</HashLink>
                         </li>
                     </ul>
                 </div>
@@ -67,4 +74,4 @@ const Navbar = () => {
         </>
     );
 }
-export default Navbar;
+export default Navbar2;
