@@ -24,25 +24,46 @@ const Navbar = () => {
             </div>
             <div className="block md:hidden text-white z-0">
                 <div className="flex justify-between py-4 px-6">
-                    <span className="logo text-2xl pt-1">Staticnova</span>
+                    <span className="logo text-2xl pt-1"><HashLink smooth to="/">Staticnova</HashLink></span>
                     <HiMenu size={40} onClick={toggleNav} className={nav ? "hidden" : "block"}/>
                 </div>
             </div>
-            <div className={nav ? "fixed z-50 top-0 right-0 w-screen h-screen backdrop-blur-lg" : "hidden"}>
+            <div className={nav ? "fixed z-50 top-0 right-0 w-screen h-screen backdrop-blur-lg bg-[#0B1544] bg-opacity-20" : "hidden"}>
                 <div className="flex w-full justify-end">
-                    <AiOutlineClose size={50} onClick={toggleNav} className="cursor-pointer text-white  mx-10 my-6"/>
+                    <AiOutlineClose size={40} onClick={toggleNav} className="cursor-pointer text-white  mx-6 my-4"/>
                 </div>
-                <div className="flex justify-center text-black h-screen">
+                <div className="flex justify-center text-white h-screen">
                     <ul className="justify-center items-center space-y-5 mt-24 text-center ocra">
-                        <li className="border-b-2 pb-5 border-b-black ">
+                        {/*<li className="border-b-2 pb-5 border-b-white ">*/}
+                        {/*    <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ">Home</HashLink>*/}
+                        {/*</li>*/}
+                        {/*<li className="border-b-2 pb-5 border-b-white ">*/}
+                        {/*    <HashLink smooth to="/illustrations#top" onClick={toggleNav} className="text-4xl ">Illustrations</HashLink>*/}
+                        {/*</li>*/}
+                        {/*<li className="border-b-2 pb-5 border-b-white ">*/}
+                        {/*    <HashLink smooth to="/graphicdesign#top" onClick={toggleNav} className="text-4xl ">Graphic Design</HashLink>*/}
+                        {/*</li>*/}
+                        {/*<li>*/}
+                        {/*    <HashLink smooth to="/uiux" onClick={toggleNav} className="text-4xl ">UI/UX</HashLink>*/}
+                        {/*</li>*/}
+                        <li className="py-2">
                             <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ">Home</HashLink>
                         </li>
-                        <li className="border-b-2 pb-5 border-b-black ">
+                        <div className="flex justify-center">
+                            <hr className="w-80 p-[2px] bg-white rounded-full"/>
+                        </div>
+                        <li className="py-2">
                             <HashLink smooth to="/illustrations#top" onClick={toggleNav} className="text-4xl ">Illustrations</HashLink>
                         </li>
-                        <li className="border-b-2 pb-5 border-b-black ">
+                        <div className="flex justify-center">
+                            <hr className="w-80 p-[2px] bg-white rounded-full"/>
+                        </div>
+                        <li className="py-2">
                             <HashLink smooth to="/graphicdesign#top" onClick={toggleNav} className="text-4xl ">Graphic Design</HashLink>
                         </li>
+                        <div className="flex justify-center">
+                            <hr className="w-80 p-[2px] bg-white rounded-full"/>
+                        </div>
                         <li>
                             <HashLink smooth to="/uiux" onClick={toggleNav} className="text-4xl ">UI/UX</HashLink>
                         </li>

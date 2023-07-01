@@ -171,7 +171,7 @@ const Main = () => {
                         <div className="flex pt-20 justify-center">
                             <div className="flex justify-center z-10 pt-24 pb-52">
                                 <div className="grid grid-rows-2">
-                                    <span className="gtek text-5xl">staticnova</span>
+                                    <span className="gtek text-5xl">yashmitha</span>
                                     <span className="ocra text-2xl text-center">An Illustrator and Graphic Designer</span>
                                 </div>
                             </div>
