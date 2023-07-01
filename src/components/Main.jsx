@@ -23,7 +23,7 @@ const Main = () => {
         <>
             <div className="hidden md:flex justify-between text-white">
                 <div className="px-6 py-4">
-                    <span className="logo text-4xl">Staticnova</span>
+                    <HashLink smooth to="/"><span className="logo text-4xl">Staticnova</span></HashLink>
                 </div>
                 <div className="px-6 py-4">
                     <ul className="flex space-x-12 text-2xl bord">
