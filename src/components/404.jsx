@@ -14,7 +14,7 @@ const NotFound = () => {
                     <span className="text-2xl ocra">...maybe the page you're looking for is not found or never existed</span>
                 </div>
             </div>
-            <div className="py-[5.98rem] flex justify-center">
+            <div className="pb-[7.96rem] pt-16 flex justify-center">
                 <HashLink smooth to="/">
                     <span className="ocra text-3xl bg-black py-4 px-6 rounded-md">Home Page</span>
                 </HashLink>
