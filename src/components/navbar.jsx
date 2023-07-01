@@ -34,18 +34,6 @@ const Navbar = () => {
                 </div>
                 <div className="flex justify-center text-white h-screen">
                     <ul className="justify-center items-center space-y-5 mt-24 text-center ocra">
-                        {/*<li className="border-b-2 pb-5 border-b-white ">*/}
-                        {/*    <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ">Home</HashLink>*/}
-                        {/*</li>*/}
-                        {/*<li className="border-b-2 pb-5 border-b-white ">*/}
-                        {/*    <HashLink smooth to="/illustrations#top" onClick={toggleNav} className="text-4xl ">Illustrations</HashLink>*/}
-                        {/*</li>*/}
-                        {/*<li className="border-b-2 pb-5 border-b-white ">*/}
-                        {/*    <HashLink smooth to="/graphicdesign#top" onClick={toggleNav} className="text-4xl ">Graphic Design</HashLink>*/}
-                        {/*</li>*/}
-                        {/*<li>*/}
-                        {/*    <HashLink smooth to="/uiux" onClick={toggleNav} className="text-4xl ">UI/UX</HashLink>*/}
-                        {/*</li>*/}
                         <li className="py-2">
                             <HashLink smooth to="/#works2" onClick={toggleNav} className="text-4xl ">Works</HashLink>
                         </li>

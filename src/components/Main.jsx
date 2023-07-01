@@ -100,9 +100,9 @@ const Main = () => {
                     </div>
                     <div className="flex justify-center items-center pb-14">
                         <ul className="flex space-x-24">
-                            <li><SiAdobephotoshop size={70} className="text-white"/></li>
-                            <li><SiAdobeillustrator size={70} className="text-white"/></li>
-                            <li><SiAdobexd size={70} className="text-white"/></li>
+                            <li><SiAdobephotoshop size={70} className="text-white hover:scale-105 duration-200"/></li>
+                            <li><SiAdobeillustrator size={70} className="text-white hover:scale-105 duration-200"/></li>
+                            <li><SiAdobexd size={70} className="text-white hover:scale-105 duration-200"/></li>
                         </ul>
                     </div>
                     <div id="contact" className="pb-[8rem] pt-6">
