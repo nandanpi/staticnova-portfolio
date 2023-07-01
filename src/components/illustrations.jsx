@@ -1,6 +1,4 @@
-import React, {useState} from "react";
-import {HiMenu} from "react-icons/hi";
-import {AiOutlineClose} from "react-icons/ai";
+import React from "react";
 import here from "../assets/img/here.png";
 import kristina from "../assets/img/kristina.png";
 import preuniq from "../assets/img/preuniq.png";
@@ -15,24 +13,21 @@ import {HashLink} from "react-router-hash-link";
 import ScrollToTopButton from "./scrollToTop";
 import ellipse from "../assets/svg/Ellipse_illus.svg";
 import arrow from "../assets/svg/arrow.svg";
+import ellipseph from "../assets/svg/Ellipse_illusph.svg";
 
 
 const Illustrations = () => {
-    const [nav,setNav] = useState(false);
-    function toggleNav(){
-        setNav(!nav);
-    }
     return(
         <>
-            <div className="text-white">
-                <div className="flex justify-between">
-                    <div className="px-10 pt-6">
-                        <h1 className="text-4xl logo"><HashLink smooth to="/" >Staticnova</HashLink></h1>
-                    </div>
-                    <div className={!nav ? "px-10 pt-6" : "hidden"}>
-                        <HiMenu size={50} onClick={toggleNav} className="cursor-pointer"/>
-                    </div>
-                </div>
+            <div className="text-white hidden md:block">
+                {/*<div className="flex justify-between">*/}
+                {/*    <div className="px-10 pt-6">*/}
+                {/*        <h1 className="text-4xl logo"><HashLink smooth to="/" >Staticnova</HashLink></h1>*/}
+                {/*    </div>*/}
+                {/*    <div className={!nav ? "px-10 pt-6" : "hidden"}>*/}
+                {/*        <HiMenu size={50} onClick={toggleNav} className="cursor-pointer"/>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 <div className="block pb-20">
                     <div className="flex">
                         <div className="flex w-screen">
@@ -79,25 +74,51 @@ const Illustrations = () => {
                     </div>
                 </div>
             </div>
-            <div className={nav ? "fixed z-50 top-0 right-0 w-screen h-screen backdrop-blur-lg" : "hidden"}>
-                <div className="flex w-full justify-end">
-                    <AiOutlineClose size={50} onClick={toggleNav} className="cursor-pointer text-white  mx-10 my-6"/>
+            <div className="block md:hidden pb-16">
+                <div className="block pt-20 mx-4">
+                    <div className="flex pt-20 justify-center">
+                        <div className="flex justify-center z-10 pt-24 pb-52">
+                            <div className="grid grid-rows-2">
+                                <span className="gtek text-4xl text-center">illustrations</span>
+                                <span className="ocra text-xl text-center">Vector illustrations, digital arts & anime fan arts</span>
+                            </div>
+                        </div>
+                        <div className="absolute flex justify-center">
+                            <img src={ellipseph} alt=""/>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex justify-center text-black h-screen">
-                    <ul className="justify-center items-center space-y-5 mt-24 text-center ocra">
-                        <li className="border-b-2 pb-5 border-b-black ">
-                            <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ">Home</HashLink>
-                        </li>
-                        <li className="border-b-2 pb-5 border-b-black ">
-                            <HashLink smooth to="/illustrations#top" onClick={toggleNav} className="text-4xl ">Illustrations</HashLink>
-                        </li>
-                        <li className="border-b-2 pb-5 border-b-black ">
-                            <HashLink smooth to="/graphicdesign#top" onClick={toggleNav} className="text-4xl ">Graphic Design</HashLink>
-                        </li>
-                        <li>
-                            <HashLink smooth to="/uiux" onClick={toggleNav} className="text-4xl ">UI/UX</HashLink>
-                        </li>
-                    </ul>
+                <div className="flex justify-center pb-14">
+                    <HashLink smooth to="/illustrations#arts"><img src={arrow} alt="" className="w-[7rem] h-[7rem] animate-bounce"/></HashLink>
+                </div>
+                <div className="mx-4" id="arts">
+                    <div className="flex justify-center py-6 text-center">
+                        <span className="bord text-3xl">Vector Illustrations</span>
+                    </div>
+
+                    <div className="mx-4 pt-10">
+                        <div className="space-y-10">
+                            <img src={thisillus} alt=""/>
+                            <img src={preuniq} alt=""/>
+                            <img src={here} alt=""/>
+                            <img src={bold} alt=""/>
+                            <img src={kristina} alt=""/>
+                        </div>
+                    </div>
+
+                    <div className="flex justify-center py-16">
+                        <span className="bord text-3xl">Digital Art</span>
+                    </div>
+
+                    <div className="mx-4 pt-10">
+                        <div className="space-y-10">
+                            <img src={haikyuu} alt=""/>
+                            <img src={anya} alt=""/>
+                            <img src={mikey} alt=""/>
+                            <img src={akkochan} alt=""/>
+                            <img src={eren} alt=""/>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="text-white"><ScrollToTopButton /></div>

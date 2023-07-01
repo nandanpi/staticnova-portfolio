@@ -8,6 +8,7 @@ import ui_banner from "../assets/img/banneruiux.png";
 import {SiGmail, SiBehance, SiInstagram, SiTwitter} from "react-icons/si";
 import ScrollToTopButton from "./scrollToTop";
 import ellipse from "../assets/svg/Ellipse.svg";
+import ellipseph from "../assets/svg/Ellipseph.svg";
 import arrow from "../assets/svg/arrow.svg";
 
 
@@ -22,7 +23,7 @@ const Main = () => {
                     <div className="flex w-screen">
                         <div className="flex justify-center items-center  w-full mt-64 z-20">
                             <div className="grid grid-rows-2 text-center">
-                                <span className="text-white text-8xl gtek">staticnova</span>
+                                <span className="text-white text-8xl     gtek">yashmitha</span>
                                 <span className="text-white text-2xl ocra">An Illustrator and Graphic Designer</span>
                             </div>
                         </div>
@@ -166,33 +167,31 @@ const Main = () => {
 
             <div className="block md:hidden text-white z-0">
                 <div className="mx-8">
-                    <div className="mt-20 pb-12">
-                        <div className="z- absolute z-10">
-                            <img src={ellipse} alt=""/>
-                        </div>
-                        <div className="ocra text-[3rem] grid grid-rows-3 px-7 pt-9 z-20">
-                            <span >Hi,</span>
-                            <span>I'm</span>
-                            <span>Staticnova</span>
+                    <div className="block pt-20">
+                        <div className="flex pt-20 justify-center">
+                            <div className="flex justify-center z-10 pt-24 pb-52">
+                                <div className="grid grid-rows-2">
+                                    <span className="gtek text-5xl">staticnova</span>
+                                    <span className="ocra text-2xl text-center">An Illustrator and Graphic Designer</span>
+                                </div>
+                            </div>
+                            <div className="absolute flex justify-center">
+                                <img src={ellipseph} alt=""/>
+                            </div>
                         </div>
                     </div>
-
-                    <div className="max-w-min flex pb-20">
-                        <span className="text-3xl text-right ocra ml-[7rem]">An Illustrator and Graphic Designer</span>
-                    </div>
-
                     <div className="flex justify-center pb-14">
                         <HashLink smooth to="/#works2"><img src={arrow} alt="" className="w-[7rem] h-[7rem] animate-bounce"/></HashLink>
                     </div>
 
                     <div id="works2">
-                        <div>
+                        <div className="pt-10">
                             <span className="bord text-3xl">Works</span>
                         </div>
                         <div className="flex justify-center">
                             <div className="grid grid-rows-3 py-16 gap-10">
                                 <div className="relative">
-                                    <img src={illustration_banner} alt="" className="rounded-[40px] max-w-[14rem]"/>
+                                    <img src={illustration_banner} alt="" className="rounded-[40px] max-w-[16rem]"/>
                                     <HashLink smooth to="/illustrations#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
@@ -202,7 +201,7 @@ const Main = () => {
                                     </HashLink>
                                 </div>
                                 <div className="relative">
-                                    <img src={gd_banner} alt="" className="rounded-[40px] max-w-[14rem]"/>
+                                    <img src={gd_banner} alt="" className="rounded-[40px] max-w-[16rem]"/>
                                     <HashLink smooth to="/graphicdesign#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
@@ -212,7 +211,7 @@ const Main = () => {
                                     </HashLink>
                                 </div>
                                 <div className="relative">
-                                    <img src={ui_banner} alt="" className="rounded-[40px] max-w-[14rem]"/>
+                                    <img src={ui_banner} alt="" className="rounded-[40px] max-w-[16rem]"/>
                                     <HashLink smooth to="/uiux">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
@@ -247,15 +246,15 @@ const Main = () => {
                             <div>
                                 <span className="bord text-3xl">Contact</span>
                             </div>
-                            <div className="pt-16 pb-10 flex justify-center">
+                            <div className="pt-16 pb-10 flex justify-center ocra">
                                 <form action="https://getform.io/f/1d08161d-d11d-4601-b3bd-5c8f6ff1e2e3" method="POST" >
-                                    <div className="pb-3 pt-6">
+                                    <div className="pb-4 pt-6">
                                         <input type="text" name="name" placeholder="Name" className="border-none p-2 rounded-md text-black w-full focus:outline-none" required={true}/>
                                     </div>
-                                    <div className="pb-3">
+                                    <div className="pb-4">
                                         <input type="text" name="email" placeholder="Email" className="border-none p-2 rounded-md text-black w-full focus:outline-none" required={true}/>
                                     </div>
-                                    <div className="pb-3">
+                                    <div className="pb-4">
                                         <textarea name="message" placeholder="Your Message" rows="10" className="border-none resize-none w-full rounded-md text-black focus:outline-none p-2" required={true}/>
                                     </div>
                                     <div>
@@ -269,7 +268,7 @@ const Main = () => {
                 <div className="bg-black text-white">
                     <div>
                         <div className="flex justify-center py-12">
-                            <ul className="flex space-x-10">
+                            <ul className="flex space-x-12">
                                 <HashLink smooth to="mailto:yashmithashailesh@gmail.com" target="_blank"><li className="hover:scale-125 duration-200"><SiGmail size={30}/></li></HashLink>
                                 <HashLink smooth to="https://instagram.com/staticnovaa?igshid=NGExMmI2YTkyZg==" target="_blank"><li className="hover:scale-125 duration-200"><SiInstagram size={30}/></li></HashLink>
                                 <HashLink smooth to="https://www.behance.net/yashmitha?tracking_source=search_projects%7Cyashmitha" target="_blank"><li className="hover:scale-125 duration-200"><SiBehance size={30}/></li></HashLink>

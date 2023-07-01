@@ -1,7 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
 import {HashLink} from "react-router-hash-link";
-import {HiMenu} from "react-icons/hi";
-import {AiOutlineClose} from "react-icons/ai";
 import acmw from "../assets/img/acmwlogo.png";
 import carpost from "../assets/img/carpost.png";
 import ghg from "../assets/img/ghg.png";
@@ -16,21 +14,17 @@ import ellipse from "../assets/svg/Ellipse_gd.svg";
 import arrow from "../assets/svg/arrow.svg";
 
 const Gd = () => {
-    const [nav,setNav] = useState(false);
-    function toggleNav(){
-        setNav(!nav);
-    }
     return(
         <>
             <div className="text-white pb-10">
-                <div className="flex justify-between">
-                    <div className="px-10 py-6">
-                        <h1 className="text-4xl logo"><HashLink to="/" >Staticnova</HashLink></h1>
-                    </div>
-                    <div className={!nav ? "px-10 py-6" : "hidden"}>
-                        <HiMenu size={50} onClick={toggleNav} className="cursor-pointer"/>
-                    </div>
-                </div>
+                {/*<div className="flex justify-between">*/}
+                {/*    <div className="px-10 py-6">*/}
+                {/*        <h1 className="text-4xl logo"><HashLink to="/" >Staticnova</HashLink></h1>*/}
+                {/*    </div>*/}
+                {/*    <div className={!nav ? "px-10 py-6" : "hidden"}>*/}
+                {/*        <HiMenu size={50} onClick={toggleNav} className="cursor-pointer"/>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 <div className="flex">
                     <div className="flex w-screen">
                         <div className="flex justify-center items-center  w-full mt-64 z-20">
@@ -74,27 +68,8 @@ const Gd = () => {
                     </div>
                 </div>
             </div>
+            <div className="block md:hidden">
 
-            <div className={nav ? "fixed z-50 top-0 right-0 w-screen h-screen backdrop-blur-lg" : "hidden"}>
-                <div className="flex w-full justify-end">
-                    <AiOutlineClose size={50} onClick={toggleNav} className="cursor-pointer text-white  mx-10 my-6"/>
-                </div>
-                <div className="flex text-black justify-center h-screen">
-                    <ul className="justify-center items-center space-y-5 mt-24 text-center arialb">
-                        <li className="border-b-2 pb-5 border-b-black ">
-                            <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ">Home</HashLink>
-                        </li>
-                        <li className="border-b-2 pb-5 border-b-black ">
-                            <HashLink smooth to="/illustrations" onClick={toggleNav} className="text-4xl ">Illustrations</HashLink>
-                        </li>
-                        <li className="border-b-2 pb-5 border-b-black ">
-                            <HashLink smooth to="/graphicdesign#top" onClick={toggleNav} className="text-4xl ">Graphic Design</HashLink>
-                        </li>
-                        <li>
-                            <HashLink smooth to="/uiux" onClick={toggleNav} className="text-4xl ">UI/UX</HashLink>
-                        </li>
-                    </ul>
-                </div>
             </div>
             <div className="text-white"><ScrollToTopButton /></div>
         </>
