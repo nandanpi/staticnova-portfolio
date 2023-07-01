@@ -197,7 +197,7 @@ const Gd = () => {
                                 <div className="group-hover:scale-110">
                                     <img src={slider1[currentImageIndex1]} alt=""/>
                                 </div>
-                                <HashLink smooth to="https://www.instagram.com/p/CmLp7-DB7AA/">
+                                <HashLink smooth to="https://www.instagram.com/p/CrQ2nGsJhFQ/">
                                     <div className="bg-black p-3">
                                         <span>View on Instagram</span>
                                     </div>
@@ -222,6 +222,22 @@ const Gd = () => {
                             </div>
                             <div className="absolute translate-y-[-220px] right-1 bg-black bg-opacity-30 py-1 rounded-md" onClick={nextImage2}>
                                 <BsChevronCompactRight size={30}/>
+                            </div>
+                        </div>
+
+                        <div className=" py-12">
+                            <img src={fluid} alt="" className="pb-12"/>
+                            <img src={oplogo} alt="" className="pt-12"/>
+                        </div>
+
+                        <div className="pt-6 pb-12 flex justify-center">
+                            <span className="ocra text-3xl text-center">Clubs, Organizations and clients</span>
+                        </div>
+                        <div className="flex justify-center pb-16">
+                            <div className="space-y-12 max-w-[10rem]">
+                                <img src={post} alt=""/>
+                                <img src={ghg} alt=""/>
+                                <img src={acmw} alt=""/>
                             </div>
                         </div>
                     </div>
