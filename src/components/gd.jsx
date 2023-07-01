@@ -13,7 +13,7 @@ import ScrollToTopButton from "./scrollToTop";
 import ellipse from "../assets/svg/Ellipse_gd.svg";
 import ellipseph from "../assets/svg/Ellipse_gdph.svg";
 import arrow from "../assets/svg/arrow.svg";
-import { ChevronUpIcon } from "@heroicons/react/solid";
+import {BsChevronCompactLeft, BsChevronCompactRight} from "react-icons/bs";
 
 
 
@@ -25,7 +25,20 @@ const Gd = () => {
         require("../assets/img/carpost4.png")
     ]
 
+    const slider1 = [
+        require("../assets/img/recruit1.png"),
+        require("../assets/img/recruit2.png"),
+        require("../assets/img/recruit3.png"),
+    ]
+
+    const slider2 = [
+        require("../assets/img/merchf.png"),
+        require("../assets/img/merchb.png")
+    ]
+
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [currentImageIndex1, setCurrentImageIndex1] = useState(0);
+    const [currentImageIndex2, setCurrentImageIndex2] = useState(0);
 
     useEffect(() => {
         // Interval for auto sliding
@@ -33,13 +46,55 @@ const Gd = () => {
             setCurrentImageIndex((prevIndex) =>
                 prevIndex === slider.length - 1 ? 0 : prevIndex + 1
             );
+            setCurrentImageIndex1((prevIndex1) =>
+                prevIndex1 === slider1.length - 1 ? 0 : prevIndex1 + 1
+            );
+            setCurrentImageIndex2((prevIndex2) =>
+                prevIndex2 === slider2.length - 1 ? 0 : prevIndex2 + 1
+            );
         }, 3000);
 
         return () => {
             // Clear the interval when component is unmounted
             clearInterval(interval);
         };
-    }, [slider.length]);
+    }, [slider.length, slider1.length, slider2.length]);
+
+    const previousImage = () => {
+        setCurrentImageIndex((prevIndex) =>
+            prevIndex === 0 ? slider.length - 1 : prevIndex - 1
+        );
+    };
+
+    const nextImage = () => {
+        setCurrentImageIndex((prevIndex) =>
+            prevIndex === slider.length - 1 ? 0 : prevIndex + 1
+        );
+    };
+
+    const previousImage1 = () => {
+        setCurrentImageIndex1((prevIndex1) =>
+            prevIndex1 === 0 ? slider1.length - 1 : prevIndex1 - 1
+        );
+    };
+
+    const nextImage1 = () => {
+        setCurrentImageIndex1((prevIndex1) =>
+            prevIndex1 === slider1.length - 1 ? 0 : prevIndex1 + 1
+        );
+    };
+
+    const previousImage2 = () => {
+        setCurrentImageIndex2((prevIndex2) =>
+            prevIndex2 === 0 ? slider2.length - 1 : prevIndex2 - 1
+        );
+    };
+
+    const nextImage2 = () => {
+        setCurrentImageIndex2((prevIndex2) =>
+            prevIndex2 === slider2.length - 1 ? 0 : prevIndex2 + 1
+        );
+    };
 
     return(
         <>
@@ -118,9 +173,55 @@ const Gd = () => {
 
                 <div className="block" id="arts">
                     <div className="mx-6 block">
-                        <div className="flex justify-center">
-                            <div className="flex justify-center z-10 py-24">
-                                <img src={slider[currentImageIndex]} alt=""/>
+                        <div className="relative justify-center">
+                            <div className="justify-center z-10 py-12 duration-700">
+                                <div className="group-hover:scale-110">
+                                    <img src={slider[currentImageIndex]} alt=""/>
+                                </div>
+                                <HashLink smooth to="https://www.instagram.com/p/CmLp7-DB7AA/">
+                                    <div className="bg-black p-3">
+                                        <span>View on Instagram</span>
+                                    </div>
+                                </HashLink>
+                            </div>
+                            <div className="absolute translate-y-[-290px] left-1 bg-black bg-opacity-30 py-1 rounded-md" onClick={previousImage}>
+                                <BsChevronCompactLeft size={30}/>
+                            </div>
+                            <div className="absolute translate-y-[-290px] right-1 bg-black bg-opacity-30 py-1 rounded-md" onClick={nextImage}>
+                                <BsChevronCompactRight size={30}/>
+                            </div>
+                        </div>
+
+                        <div className="relative justify-center">
+                            <div className="justify-center z-10 py-12 duration-700">
+                                <div className="group-hover:scale-110">
+                                    <img src={slider1[currentImageIndex1]} alt=""/>
+                                </div>
+                                <HashLink smooth to="https://www.instagram.com/p/CmLp7-DB7AA/">
+                                    <div className="bg-black p-3">
+                                        <span>View on Instagram</span>
+                                    </div>
+                                </HashLink>
+                            </div>
+                            <div className="absolute translate-y-[-290px] left-1 bg-black bg-opacity-30 py-1 rounded-md" onClick={previousImage1}>
+                                <BsChevronCompactLeft size={30}/>
+                            </div>
+                            <div className="absolute translate-y-[-290px] right-1 bg-black bg-opacity-30 py-1 rounded-md" onClick={nextImage1}>
+                                <BsChevronCompactRight size={30}/>
+                            </div>
+                        </div>
+
+                        <div className="relative justify-center">
+                            <div className="justify-center z-10 py-12 duration-700">
+                                <div className="group-hover:scale-110">
+                                    <img src={slider2[currentImageIndex2]} alt=""/>
+                                </div>
+                            </div>
+                            <div className="absolute translate-y-[-220px] left-1 bg-black bg-opacity-30 py-1 rounded-md" onClick={previousImage2}>
+                                <BsChevronCompactLeft size={30}/>
+                            </div>
+                            <div className="absolute translate-y-[-220px] right-1 bg-black bg-opacity-30 py-1 rounded-md" onClick={nextImage2}>
+                                <BsChevronCompactRight size={30}/>
                             </div>
                         </div>
                     </div>
