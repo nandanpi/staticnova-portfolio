@@ -1,11 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import {HashLink} from "react-router-hash-link";
 import gd_banner from "../assets/img/gd_banner.png";
 import illustration_banner from "../assets/img/illustration_banner.png";
 import {SiAdobexd , SiAdobephotoshop , SiAdobeillustrator} from "react-icons/si";
 import pfp from "../assets/img/pfp.png";
 import ui_banner from "../assets/img/banneruiux.png";
-import {HiMenu} from "react-icons/hi";
 import {SiGmail, SiBehance, SiInstagram, SiTwitter} from "react-icons/si";
 import ScrollToTopButton from "./scrollToTop";
 import ellipse from "../assets/svg/Ellipse.svg";
@@ -15,26 +14,9 @@ import arrow from "../assets/svg/arrow.svg";
 
 
 const Main = () => {
-    const [nav,setNav] = useState(false);
-    function toggleNav(){
-        setNav(!nav);
-    }
+
     return (
         <>
-            <div className="hidden md:flex justify-between text-white">
-                <div className="px-6 py-4">
-                    <HashLink smooth to="/"><span className="logo text-4xl">Staticnova</span></HashLink>
-                </div>
-                <div className="px-6 py-4">
-                    <ul className="flex space-x-12 text-2xl bord">
-                        <li><HashLink smooth to="/#works">Works</HashLink></li>
-                        <li><HashLink smooth to="/#about">About</HashLink></li>
-                        <li><HashLink smooth to="/#contact">Contact</HashLink></li>
-                    </ul>
-                </div>
-            </div>
-
-
             <div className="hidden md:block">
                 <div className="flex">
                     <div className="flex w-screen">
@@ -183,10 +165,6 @@ const Main = () => {
 
 
             <div className="block md:hidden text-white z-0">
-                <div className="flex justify-between py-4 px-6">
-                    <span className="logo text-2xl">Staticnova</span>
-                    <HiMenu size={40} onClick={toggleNav} className={nav ? "hidden" : "block"}/>
-                </div>
                 <div className="mx-8">
                     <div className="mt-20 pb-12">
                         <div className="z- absolute z-10">

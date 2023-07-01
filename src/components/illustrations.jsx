@@ -13,7 +13,7 @@ import bold from "../assets/img/bold.png";
 import mikey from "../assets/img/mikey.png";
 import {HashLink} from "react-router-hash-link";
 import ScrollToTopButton from "./scrollToTop";
-import ellipse from "../assets/svg/Ellipse.svg";
+import ellipse from "../assets/svg/Ellipse_illus.svg";
 import arrow from "../assets/svg/arrow.svg";
 
 

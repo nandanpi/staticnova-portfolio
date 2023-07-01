@@ -12,7 +12,7 @@ import post from "../assets/img/post.png";
 import recruit from "../assets/img/recruit.png";
 import fluid from "../assets/img/fluid.png";
 import ScrollToTopButton from "./scrollToTop";
-import ellipse from "../assets/svg/Ellipse.svg";
+import ellipse from "../assets/svg/Ellipse_gd.svg";
 import arrow from "../assets/svg/arrow.svg";
 
 const Gd = () => {
