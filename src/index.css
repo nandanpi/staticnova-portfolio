@@ -17,17 +17,27 @@ code {
 }
 
 @font-face {
-    font-family: "logo", sans-serif;
+    font-family: "logo";
+    src: url("assets/fonts/american3d.ttf");
+}
+@font-face {
+    font-family: "Bord Demo";
+    src: url("assets/fonts/BordDemo.ttf");
+}
+@font-face {
+    font-family: "Gtek Technology";
+    src: url("assets/fonts/Gtek Technology.ttf");
+}
+@font-face {
+    font-family: "OCR A Extended";
+    src: url("assets/fonts/OcrA.ttf");
 }
 
 .ocra{
   font-family: "OCR A Extended", sans-serif;
 }
-.arialb{
-    font-family: "Arial Black", sans-serif;
-}
 .logo{
-  font-family: "American Kestrel 3D", sans-serif;
+  font-family: "logo", sans-serif;
 }
 .bord{
     font-family: "Bord Demo", sans-serif;
