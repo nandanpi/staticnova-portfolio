@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import {HashLink} from "react-router-hash-link";
 import gd_banner from "../assets/img/gd_banner.png";
 import illustration_banner from "../assets/img/illustration_banner.png";
@@ -16,7 +16,9 @@ import arrow from "../assets/svg/arrow.svg";
 
 const Main = () => {
 
-    const [isWorksVisible, setIsWorksVisible] = React.useState(false);
+    const [isWorksVisible, setIsWorksVisible] = useState(false);
+    const [isAboutVisible, setIsAboutVisible] = useState(false);
+    const [isContactVisible, setIsContactVisible] = useState(false);
     useEffect(() => {
         const interval = setInterval(() => {
             const worksScroll = () => {
@@ -24,17 +26,42 @@ const Main = () => {
                 if(workDiv){
                     const rect = workDiv.getBoundingClientRect();
                     const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-                    if(rect.top < windowHeight-150){
+                    if(rect.top < windowHeight-100){
                         setIsWorksVisible(true);
                     }
                 }
             };
+            const aboutScroll = () => {
+                const aboutDiv = document.getElementById('about');
+                if(aboutDiv){
+                    const rect = aboutDiv.getBoundingClientRect();
+                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+                    if(rect.top < windowHeight-100){
+                        setIsAboutVisible(true);
+                    }
+                }
+            };
+            const contactScroll = () => {
+                const contactDiv = document.getElementById('contact');
+                if(contactDiv){
+                    const rect = contactDiv.getBoundingClientRect();
+                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+                    if(rect.top < windowHeight-100){
+                        setIsContactVisible(true);
+                    }
+                }
+            }
+            window.addEventListener('scroll', aboutScroll);
             window.addEventListener('scroll', worksScroll);
+            window.addEventListener('scroll', contactScroll);
             if(isWorksVisible){
                 console.log("works visible");
             }
             return () => {
-                window.removeEventListener('scroll', worksScroll);}
+                window.removeEventListener('scroll', aboutScroll);
+                window.removeEventListener('scroll', worksScroll);
+                window.removeEventListener('scroll', contactScroll);
+            }
         },1000);
         return () => clearInterval(interval);
 
@@ -112,7 +139,7 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div id="about" className="pt-7 mt-14 px-6 space-y-6 pb-10">
+                <div id="about" className={isAboutVisible ? "ease-linear duration-500 pt-7 mt-14 px-6 space-y-6 pb-10" : "translate-x-[200%]"}>
                     <div>
                         <h1 className="text-6xl bord text-white">About Me</h1>
                     </div>
@@ -140,7 +167,7 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div id="contact" className="pb-10 pt-10 px-6 mt-10">
+                <div id="contact" className={isContactVisible ? "ease-in duration-500 pb-10 pt-10 px-6 mt-10" : "translate-x-[-200%]"}>
                     <div className="pb-14 pt-2">
                         <h1 className="text-6xl bord text-white">Contact</h1>
                     </div>
