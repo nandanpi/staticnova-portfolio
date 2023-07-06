@@ -186,7 +186,7 @@ const Main = () => {
                                     <span className="ocra text-2xl text-center">An Illustrator and Graphic Designer</span>
                                 </div>
                             </div>
-                            <div className="absolute flex justify-center">
+                            <div className="absolute flex justify-center growsmall">
                                 <img src={ellipseph} alt=""/>
                             </div>
                         </div>

@@ -205,7 +205,7 @@ const Gd = () => {
                                 <span className="ocra text-xl text-center">Instagram carousels, Merchs, Logos, Thumbnails & more</span>
                             </div>
                         </div>
-                        <div className="absolute flex justify-center">
+                        <div className="absolute flex justify-center growsmall">
                             <img src={ellipseph} alt=""/>
                         </div>
                     </div>

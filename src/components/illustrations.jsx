@@ -20,14 +20,6 @@ const Illustrations = () => {
     return(
         <>
             <div className="text-white hidden md:block">
-                {/*<div className="flex justify-between">*/}
-                {/*    <div className="px-10 pt-6">*/}
-                {/*        <h1 className="text-4xl logo"><HashLink smooth to="/" >Staticnova</HashLink></h1>*/}
-                {/*    </div>*/}
-                {/*    <div className={!nav ? "px-10 pt-6" : "hidden"}>*/}
-                {/*        <HiMenu size={50} onClick={toggleNav} className="cursor-pointer"/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
                 <div className="block pb-20">
                     <div className="flex">
                         <div className="flex w-screen">
@@ -38,7 +30,7 @@ const Illustrations = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="absolute z-10 flex justify-center w-full pt-36">
+                        <div className="absolute z-10 flex justify-center w-full pt-36 growsmall">
                             <img src={ellipse} alt=""/>
                         </div>
                     </div>
@@ -83,7 +75,7 @@ const Illustrations = () => {
                                 <span className="ocra text-xl text-center">Vector illustrations, digital arts & anime fan arts</span>
                             </div>
                         </div>
-                        <div className="absolute flex justify-center">
+                        <div className="absolute flex justify-center growsmall">
                             <img src={ellipseph} alt=""/>
                         </div>
                     </div>
