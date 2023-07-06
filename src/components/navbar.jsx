@@ -10,7 +10,7 @@ const Navbar = () => {
     }
     return(
         <>
-            <div className="navbar-load">
+            <div className="navbar-load max-w-[1920px] mx-auto">
                 <div className="hidden md:flex justify-between text-white">
                     <div className="px-6 py-4">
                         <HashLink smooth to="/"><span className="logo text-4xl">Staticnova</span></HashLink>
@@ -35,25 +35,6 @@ const Navbar = () => {
                 <div className="flex w-full justify-end">
                     <AiOutlineClose size={40} onClick={toggleNav} className="cursor-pointer text-white  mx-6 my-4"/>
                 </div>
-                {/*<div className=" justify-center text-white h-screen">*/}
-                {/*    <ul className="justify-center items-center space-y-5 mt-24 text-center ocra">*/}
-                {/*        <li className="py-2">*/}
-                {/*            <HashLink smooth to="/#works2" onClick={toggleNav} className="text-4xl ">Works</HashLink>*/}
-                {/*        </li>*/}
-                {/*        <div className="flex justify-center">*/}
-                {/*            <hr className="w-80 p-[2px] bg-white rounded-full"/>*/}
-                {/*        </div>*/}
-                {/*        <li className="py-2">*/}
-                {/*            <HashLink smooth to="/#about2" onClick={toggleNav} className="text-4xl ">About</HashLink>*/}
-                {/*        </li>*/}
-                {/*        <div className="flex justify-center">*/}
-                {/*            <hr className="w-80 p-[2px] bg-white rounded-full"/>*/}
-                {/*        </div>*/}
-                {/*        <li className="py-2">*/}
-                {/*            <HashLink smooth to="/#contact2" onClick={toggleNav} className="text-4xl ">Contact</HashLink>*/}
-                {/*        </li>*/}
-                {/*    </ul>*/}
-                {/*</div>*/}
                 <div className="block justify-center h-screen pt-20 items-center text-white">
                     <ul className="justify-center h-screen items-center space-y-5 mt-24 text-center ocra">
                         <li className="py-2">

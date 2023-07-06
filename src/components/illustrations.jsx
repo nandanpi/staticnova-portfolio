@@ -19,9 +19,9 @@ import ellipseph from "../assets/svg/Ellipse_illusph.svg";
 const Illustrations = () => {
     return(
         <>
-            <div className="text-white hidden md:block">
+            <div className="text-white hidden md:block max-w-[1920px] mx-auto">
                 <div className="block pb-20">
-                    <div className="flex">
+                    <div className="flex relative">
                         <div className="flex w-screen">
                             <div className="flex justify-center items-center  w-full mt-64 z-20">
                                 <div className="grid grid-rows-2 text-center">
@@ -66,6 +66,8 @@ const Illustrations = () => {
                     </div>
                 </div>
             </div>
+
+
             <div className="block md:hidden pb-16">
                 <div className="block pt-20 mx-4">
                     <div className="flex pt-20 justify-center">

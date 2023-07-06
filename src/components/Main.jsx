@@ -18,8 +18,8 @@ const Main = () => {
 
     return (
         <>
-            <div className="hidden md:block">
-                <div className="flex">
+            <div className="hidden md:block max-w-[1920px] mx-auto">
+                <div className="flex relative">
                     <div className="flex w-screen">
                         <div className="flex justify-center items-center  w-full mt-32 z-20">
                             <div className="grid grid-rows-3 text-center">
@@ -181,8 +181,9 @@ const Main = () => {
                     <div className="block pt-20">
                         <div className="flex pt-20 justify-center">
                             <div className="flex justify-center z-10 pt-24 pb-52">
-                                <div className="grid grid-rows-2">
-                                    <span className="gtek text-5xl pl-8">yashmitha</span>
+                                <div className="grid grid-rows-3">
+                                    <span className="ocra text-2xl text-left">Hey, I'm</span>
+                                    <span className="gtek text-5xl ml-8">yashmitha</span>
                                     <span className="ocra text-2xl text-center">An Illustrator and Graphic Designer</span>
                                 </div>
                             </div>

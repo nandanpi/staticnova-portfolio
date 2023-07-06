@@ -98,8 +98,8 @@ const Gd = () => {
 
     return(
         <>
-            <div className="text-white pb-10 hidden md:block">
-                <div className="flex">
+            <div className="text-white pb-10 hidden md:block max-w-[1920px] mx-auto">
+                <div className="flex relative">
                     <div className="flex w-screen">
                         <div className="flex justify-center items-center  w-full mt-64 z-20">
                             <div className="grid grid-rows-2 text-center">
@@ -193,6 +193,8 @@ const Gd = () => {
                     </div>
                 </div>
             </div>
+
+
             <div className="block md:hidden">
                 <div className="block pt-20 mx-4">
                     <div className="flex pt-20 justify-center">

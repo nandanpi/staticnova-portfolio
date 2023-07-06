@@ -5,7 +5,7 @@ import {SiGmail, SiBehance, SiInstagram, SiTwitter} from "react-icons/si";
 const Footer = () => {
     return(
         <>
-            <div className="bg-black hidden md:block">
+            <div className="bg-black hidden md:block max-w-[1920px] mx-auto">
                 <div className="py-16">
                     <div className="grid grid-rows-2 text-center gap-10">
                         <HashLink to="/#about"><span className="text-3xl bord hover:line-through">About</span></HashLink>
