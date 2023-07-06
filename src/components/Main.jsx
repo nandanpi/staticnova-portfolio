@@ -230,9 +230,9 @@ const Main = () => {
                 <div className="mx-8">
                     <div className="block pt-20">
                         <div className="flex pt-20 justify-center">
-                            <div className="flex justify-center z-10 pt-24 pb-52">
+                            <div className="flex justify-center z-10 pt-8 pb-52">
                                 <div className="grid grid-rows-3">
-                                    <span className="ocra text-2xl text-left">Hey, I'm</span>
+                                    <span className="ocra text-2xl text-left ml-8 mt-4">Hey, I'm</span>
                                     <span className="gtek text-5xl ml-8">yashmitha</span>
                                     <span className="ocra text-2xl text-center">An Illustrator and Graphic Designer</span>
                                 </div>
