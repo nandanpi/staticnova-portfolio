@@ -14,11 +14,11 @@ const Navbar = () => {
                 <div className="px-6 py-4">
                     <HashLink smooth to="/"><span className="logo text-4xl">Staticnova</span></HashLink>
                 </div>
-                <div className="px-6 py-4">
-                    <ul className="flex space-x-12 text-2xl bord">
-                        <li><HashLink smooth to="/#works">Works</HashLink></li>
-                        <li><HashLink smooth to="/#about">About</HashLink></li>
-                        <li><HashLink smooth to="/#contact">Contact</HashLink></li>
+                <div className="p-6">
+                    <ul className="flex space-x-16 text-xl bord">
+                        <li className="hover:border-b-2 pb-1"><HashLink smooth to="/#works">Works</HashLink></li>
+                        <li className="hover:border-b-2 pb-1"><HashLink smooth to="/#about">About</HashLink></li>
+                        <li className="hover:border-b-2 pb-1"><HashLink smooth to="/#contact">Contact</HashLink></li>
                     </ul>
                 </div>
             </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
                     <AiOutlineClose size={40} onClick={toggleNav} className="cursor-pointer text-white  mx-6 my-4"/>
                 </div>
                 <div className="flex justify-center text-white h-screen">
-                    <ul className="justify-center items-center space-y-5 mt-24 text-center ocra">
+                    <ul className="justify-center h-screen items-center space-y-5 mt-24 text-center ocra">
                         <li className="py-2">
                             <HashLink smooth to="/#works2" onClick={toggleNav} className="text-4xl ">Works</HashLink>
                         </li>

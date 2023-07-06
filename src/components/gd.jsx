@@ -139,9 +139,9 @@ const Gd = () => {
                         <img src={fluid} alt="" className="hover:scale-110 duration-200"/>
                         <img src={oplogo} alt="" className="hover:scale-110 duration-200"/>
                     </div>
-                    <div className="ocra space-y-4 grid grid-rows-2">
-                        <span className="text-4xl">Clubs, Organizations and clients</span>
-                        <span className="text-xl">Most of my projects were a part of students' clubs in my university.</span>
+                    <div className="space-y-4 grid grid-rows-2">
+                        <span className="bord text-4xl">Clubs, Organizations and clients</span>
+                        <span className="ocra text-xl">Most of my projects were a part of students' clubs in my university.</span>
                     </div>
                     <div className="grid grid-cols-3 gap-72 py-16">
                         <img src={post} alt="" className="object-fill hover:scale-110 duration-200"/>

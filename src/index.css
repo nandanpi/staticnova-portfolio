@@ -30,7 +30,7 @@ code {
 }
 @font-face {
     font-family: "OCR A Extended";
-    src: url("assets/fonts/OcrA.ttf");
+    src: url("assets/fonts/OcrA.TTF");
 }
 
 .ocra{
@@ -45,5 +45,6 @@ code {
 .gtek{
     font-family: "Gtek Technology", sans-serif;
 }
+
 
 

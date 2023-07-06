@@ -14,12 +14,12 @@ const Navbar2 = () => {
                 <div className="px-6 py-4">
                     <HashLink smooth to="/"><span className="logo text-4xl">Staticnova</span></HashLink>
                 </div>
-                <div className="px-6 py-4">
-                    <ul className="flex space-x-12 text-2xl bord">
-                        <li><HashLink smooth to="/">Home</HashLink></li>
-                        <li><HashLink smooth to="/illustrations#top">Illustrations</HashLink></li>
-                        <li><HashLink smooth to="/graphicdesign#top">Graphic Design</HashLink></li>
-                        <li><HashLink smooth to="/uiux#top">UI/UX</HashLink></li>
+                <div className="p-6">
+                    <ul className="flex space-x-12 text-xl bord">
+                        <li className="hover:border-b-2 pb-1"><HashLink smooth to="/">Home</HashLink></li>
+                        <li className="hover:border-b-2 pb-1"><HashLink smooth to="/illustrations#top">Illustrations</HashLink></li>
+                        <li className="hover:border-b-2 pb-1"><HashLink smooth to="/graphicdesign#top">Graphic Design</HashLink></li>
+                        <li className="hover:border-b-2 pb-1"><HashLink smooth to="/uiux#top">UI/UX</HashLink></li>
                     </ul>
                 </div>
             </div>
