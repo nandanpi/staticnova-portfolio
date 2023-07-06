@@ -56,5 +56,16 @@ code {
         transform:scale(1)
     }
 }
+.navbar-load{
+    animation : navbar-load 500ms;
+}
+@keyframes navbar-load {
+    0%{
+        transform:translateY(-100%)
+    }
+    100%{
+        transform:translateY(0%)
+    }
+}
 
 

@@ -10,24 +10,27 @@ const Navbar = () => {
     }
     return(
         <>
-            <div className="hidden md:flex justify-between text-white">
-                <div className="px-6 py-4">
-                    <HashLink smooth to="/"><span className="logo text-4xl">Staticnova</span></HashLink>
+            <div className="navbar-load">
+                <div className="hidden md:flex justify-between text-white">
+                    <div className="px-6 py-4">
+                        <HashLink smooth to="/"><span className="logo text-4xl">Staticnova</span></HashLink>
+                    </div>
+                    <div className="p-6">
+                        <ul className="flex space-x-16 text-xl bord">
+                            <li className="hover:border-b-2 pb-1"><HashLink smooth to="/#works">Works</HashLink></li>
+                            <li className="hover:border-b-2 pb-1"><HashLink smooth to="/#about">About</HashLink></li>
+                            <li className="hover:border-b-2 pb-1"><HashLink smooth to="/#contact">Contact</HashLink></li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="p-6">
-                    <ul className="flex space-x-16 text-xl bord">
-                        <li className="hover:border-b-2 pb-1"><HashLink smooth to="/#works">Works</HashLink></li>
-                        <li className="hover:border-b-2 pb-1"><HashLink smooth to="/#about">About</HashLink></li>
-                        <li className="hover:border-b-2 pb-1"><HashLink smooth to="/#contact">Contact</HashLink></li>
-                    </ul>
+                <div className="block md:hidden text-white z-0">
+                    <div className="flex justify-between py-4 px-6">
+                        <span className="logo text-2xl pt-1"><HashLink smooth to="/">Staticnova</HashLink></span>
+                        <HiMenu size={40} onClick={toggleNav} className={nav ? "hidden" : "block"}/>
+                    </div>
                 </div>
             </div>
-            <div className="block md:hidden text-white z-0">
-                <div className="flex justify-between py-4 px-6">
-                    <span className="logo text-2xl pt-1"><HashLink smooth to="/">Staticnova</HashLink></span>
-                    <HiMenu size={40} onClick={toggleNav} className={nav ? "hidden" : "block"}/>
-                </div>
-            </div>
+
             <div className={nav ? "fixed z-50 top-0 right-0 w-screen h-screen backdrop-blur-lg bg-[#0B1544] bg-opacity-20" : "hidden"}>
                 <div className="flex w-full justify-end">
                     <AiOutlineClose size={40} onClick={toggleNav} className="cursor-pointer text-white  mx-6 my-4"/>
