@@ -30,7 +30,7 @@ code {
 }
 @font-face {
     font-family: "OCR A Extended";
-    src: url("assets/fonts/OcrA.TTF");
+    src: url("assets/fonts/OcrA.ttf");
 }
 
 .ocra{
