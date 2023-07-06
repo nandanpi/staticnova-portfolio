@@ -19,6 +19,9 @@ const Main = () => {
     const [isWorksVisible, setIsWorksVisible] = useState(false);
     const [isAboutVisible, setIsAboutVisible] = useState(false);
     const [isContactVisible, setIsContactVisible] = useState(false);
+    const [isWorksVisibleMobile, setIsWorksVisibleMobile] = useState(false);
+    const [isAboutVisibleMobile, setIsAboutVisibleMobile] = useState(false);
+    const [isContactVisibleMobile, setIsContactVisibleMobile] = useState(false);
     useEffect(() => {
         const interval = setInterval(() => {
             const worksScroll = () => {
@@ -50,10 +53,44 @@ const Main = () => {
                         setIsContactVisible(true);
                     }
                 }
+            };
+            const worksScrollMobile = () => {
+                const workDiv = document.getElementById('works2');
+                if(workDiv){
+                    const rect = workDiv.getBoundingClientRect();
+                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+                    if(rect.top < windowHeight-50){
+                        setIsWorksVisibleMobile(true);
+                    }
+                }
+            };
+            const aboutScrollMobile = () => {
+                const aboutDiv = document.getElementById('about2');
+                if(aboutDiv){
+                    const rect = aboutDiv.getBoundingClientRect();
+                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+                    if(rect.top < windowHeight-50){
+                        setIsAboutVisibleMobile(true);
+                    }
+                }
+            };
+            const contactScrollMobile = () => {
+                const contactDiv = document.getElementById('contact2');
+                if(contactDiv){
+                    const rect = contactDiv.getBoundingClientRect();
+                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+                    if(rect.top < windowHeight-50){
+                        setIsContactVisibleMobile(true);
+                    }
+                }
             }
+
             window.addEventListener('scroll', aboutScroll);
             window.addEventListener('scroll', worksScroll);
             window.addEventListener('scroll', contactScroll);
+            window.addEventListener('scroll', aboutScrollMobile);
+            window.addEventListener('scroll', worksScrollMobile);
+            window.addEventListener('scroll', contactScrollMobile);
             if(isWorksVisible){
                 console.log("works visible");
             }
@@ -61,6 +98,9 @@ const Main = () => {
                 window.removeEventListener('scroll', aboutScroll);
                 window.removeEventListener('scroll', worksScroll);
                 window.removeEventListener('scroll', contactScroll);
+                window.removeEventListener('scroll', aboutScrollMobile);
+                window.removeEventListener('scroll', worksScrollMobile);
+                window.removeEventListener('scroll', contactScrollMobile);
             }
         },1000);
         return () => clearInterval(interval);
@@ -246,7 +286,7 @@ const Main = () => {
                         <HashLink smooth to="/#works2"><img src={arrow} alt="" className="w-[7rem] h-[7rem] animate-bounce"/></HashLink>
                     </div>
 
-                    <div id="works2">
+                    <div id="works2" className={isWorksVisibleMobile ? "ease-in duration-500" : "translate-x-[-200%]"}>
                         <div className="pt-10">
                             <span className="bord text-3xl">Works</span>
                         </div>
@@ -284,55 +324,54 @@ const Main = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div id="about2" className={isAboutVisibleMobile ? "justify-center pb-20 ease-in duration-500" : "translate-x-[-200%]"}>
+                        <div>
+                            <span className="bord text-3xl">About Me</span>
+                        </div>
 
-                        <div id="about2" className="justify-center pb-20">
-                            <div>
-                                <span className="bord text-3xl">About Me</span>
-                            </div>
-
-                            <div className="bg-black bg-opacity-40 backdrop-blur-md rounded-t-full flex justify-center mt-10">
-                                <div className="max-w-[13rem] py-10 ">
-                                    <img src={pfp} alt=""/>
-                                </div>
-                            </div>
-
-                            <div className="flex justify-center px-4 bg-black bg-opacity-40 backdrop-blur-md pb-10">
-                                <div className="flex justify-center">
-                                    <p className="ocra text-white text-md pr-10 justify-center ml-10">
-                                        I'm Yashmitha, <span className="text-[#D645D6]">a freelance illustrator and graphic designer</span>. I specialise in creating captivating visuals, including <span className="text-[#1CAAF3]">vectorizing, logo design, branding, digital art, and more</span>. With expertise in industry-standard software like <span className="text-[#AB64F3]">Adobe Photoshop and Illustrator</span>, I bring your ideas to life with <span className="text-[#F4F895]">high-quality and engaging designs</span>. Let's collaborate to make your vision stand out.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="bg-black bg-opacity-40 backdrop-blur-md flex justify-center pb-6">
-                                <hr className="w-[18rem] p-2"/>
-                            </div>
-                            <div className="flex justify-evenly bg-black bg-opacity-40 backdrop-blur-md pb-10 rounded-b-2xl">
-                                <SiAdobephotoshop size={40} className="text-white"/>
-                                <SiAdobeillustrator size={40} className="text-white"/>
-                                <SiAdobexd size={40} className="text-white"/>
+                        <div className="bg-black bg-opacity-40 backdrop-blur-md rounded-t-full flex justify-center mt-10">
+                            <div className="max-w-[13rem] py-10 ">
+                                <img src={pfp} alt=""/>
                             </div>
                         </div>
 
-                        <div id="contact2">
-                            <div>
-                                <span className="bord text-3xl">Contact</span>
+                        <div className="flex justify-center px-4 bg-black bg-opacity-40 backdrop-blur-md pb-10">
+                            <div className="flex justify-center">
+                                <p className="ocra text-white text-md pr-10 justify-center ml-10">
+                                    I'm Yashmitha, <span className="text-[#D645D6]">a freelance illustrator and graphic designer</span>. I specialise in creating captivating visuals, including <span className="text-[#1CAAF3]">vectorizing, logo design, branding, digital art, and more</span>. With expertise in industry-standard software like <span className="text-[#AB64F3]">Adobe Photoshop and Illustrator</span>, I bring your ideas to life with <span className="text-[#F4F895]">high-quality and engaging designs</span>. Let's collaborate to make your vision stand out.
+                                </p>
                             </div>
-                            <div className="pt-16 pb-10 flex justify-center ocra">
-                                <form action="https://getform.io/f/1d08161d-d11d-4601-b3bd-5c8f6ff1e2e3" method="POST" >
-                                    <div className="pb-4 pt-6">
-                                        <input type="text" name="name" placeholder="Name" className="border-none p-2 rounded-md text-black w-full focus:outline-none" required={true}/>
-                                    </div>
-                                    <div className="pb-4">
-                                        <input type="text" name="email" placeholder="Email" className="border-none p-2 rounded-md text-black w-full focus:outline-none" required={true}/>
-                                    </div>
-                                    <div className="pb-4">
-                                        <textarea name="message" placeholder="Your Message" rows="10" className="border-none resize-none w-full rounded-md text-black focus:outline-none p-2" required={true}/>
-                                    </div>
-                                    <div>
-                                        <button type="submit" className="px-2 py-1 bg-contactbutton text-white rounded-md hover:scale-125 duration-500">Work With Me</button>
-                                    </div>
-                                </form>
-                            </div>
+                        </div>
+                        <div className="bg-black bg-opacity-40 backdrop-blur-md flex justify-center pb-6">
+                            <hr className="w-[18rem] p-2"/>
+                        </div>
+                        <div className="flex justify-evenly bg-black bg-opacity-40 backdrop-blur-md pb-10 rounded-b-2xl">
+                            <SiAdobephotoshop size={40} className="text-white"/>
+                            <SiAdobeillustrator size={40} className="text-white"/>
+                            <SiAdobexd size={40} className="text-white"/>
+                        </div>
+                    </div>
+
+                    <div id="contact2" className={isContactVisibleMobile ? "ease-in duration-500" : "translate-x-[-200%]"}>
+                        <div>
+                            <span className="bord text-3xl">Contact</span>
+                        </div>
+                        <div className="pt-16 pb-10 flex justify-center ocra">
+                            <form action="https://getform.io/f/1d08161d-d11d-4601-b3bd-5c8f6ff1e2e3" method="POST" >
+                                <div className="pb-4 pt-6">
+                                    <input type="text" name="name" placeholder="Name" className="border-none p-2 rounded-md text-black w-full focus:outline-none" required={true}/>
+                                </div>
+                                <div className="pb-4">
+                                    <input type="text" name="email" placeholder="Email" className="border-none p-2 rounded-md text-black w-full focus:outline-none" required={true}/>
+                                </div>
+                                <div className="pb-4">
+                                    <textarea name="message" placeholder="Your Message" rows="10" className="border-none resize-none w-full rounded-md text-black focus:outline-none p-2" required={true}/>
+                                </div>
+                                <div>
+                                    <button type="submit" className="px-2 py-1 bg-contactbutton text-white rounded-md hover:scale-125 duration-500">Work With Me</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
