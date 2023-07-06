@@ -50,7 +50,7 @@ const Main = () => {
                             <div className=" max-w-sm rounded-[40px] group px-5">
                                 <div className="relative">
                                     <img src={illustration_banner} alt="" className="rounded-[40px] group-hover:scale-110 duration-200"/>
-                                    <HashLink smooth to="/illustrations#top">
+                                    <HashLink to="/illustrations#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] group-hover:scale-110 duration-200 bg-black opacity-60 flex">
                                             <div className="flex justify-center items-center h-full w-full">
                                                 <h1 className="text-3xl text-white bord">Illustrations</h1>
