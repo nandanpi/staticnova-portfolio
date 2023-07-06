@@ -325,7 +325,7 @@ const Main = () => {
                             </div>
                         </div>
                     </div>
-                    <div id="about2" className={isAboutVisibleMobile ? "justify-center pb-20 ease-in duration-500" : "translate-x-[-200%]"}>
+                    <div id="about2" className={isAboutVisibleMobile ? "justify-center pb-20 ease-in duration-500" : "translate-x-[200%]"}>
                         <div>
                             <span className="bord text-3xl">About Me</span>
                         </div>
