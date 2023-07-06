@@ -37,7 +37,7 @@ const Navbar2 = () => {
                 <div className="flex w-full justify-end">
                     <AiOutlineClose size={40} onClick={toggleNav} className="cursor-pointer text-white  mx-6 my-4"/>
                 </div>
-                <div className="flex justify-center text-white h-screen">
+                <div className="flex justify-center text-white h-screen pt-16">
                     <ul className="justify-center items-center space-y-5 mt-24 text-center ocra">
                         <li className="py-2">
                             <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ">Home</HashLink>
