@@ -26,7 +26,7 @@ const Main = () => {
                 if(workDiv){
                     const rect = workDiv.getBoundingClientRect();
                     const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-                    if(rect.top < windowHeight-100){
+                    if(rect.top < windowHeight-50){
                         setIsWorksVisible(true);
                     }
                 }
@@ -36,7 +36,7 @@ const Main = () => {
                 if(aboutDiv){
                     const rect = aboutDiv.getBoundingClientRect();
                     const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-                    if(rect.top < windowHeight-100){
+                    if(rect.top < windowHeight-50){
                         setIsAboutVisible(true);
                     }
                 }
@@ -46,7 +46,7 @@ const Main = () => {
                 if(contactDiv){
                     const rect = contactDiv.getBoundingClientRect();
                     const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-                    if(rect.top < windowHeight-100){
+                    if(rect.top < windowHeight-50){
                         setIsContactVisible(true);
                     }
                 }
@@ -64,7 +64,6 @@ const Main = () => {
             }
         },1000);
         return () => clearInterval(interval);
-
         },[isWorksVisible]);
 
     return (
@@ -90,7 +89,7 @@ const Main = () => {
                     </HashLink>
                 </div>
 
-                <div className={!isWorksVisible ? "translate-x-[-200%]" : "pt-4 pb-12 transition-all ease-linear duration-500"} id="works">
+                <div className={`transition-transform duration-500 ${isWorksVisible ? "pt-4 pb-12 scale-100" : "scale-0"}`} id="works">
                     <div className="flex">
                         <div className="px-6 mt-5">
                             <h1 className="text-6xl bord  text-white">Works</h1>
@@ -139,7 +138,7 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div id="about" className={isAboutVisible ? "ease-linear duration-500 pt-7 mt-14 px-6 space-y-6 pb-10" : "translate-x-[200%]"}>
+                <div id="about" className={isAboutVisible ? "scale-100 duration-500 pt-7 mt-14 px-6 space-y-6 pb-10" : "scale-0"}>
                     <div>
                         <h1 className="text-6xl bord text-white">About Me</h1>
                     </div>
@@ -167,7 +166,7 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div id="contact" className={isContactVisible ? "ease-in duration-500 pb-10 pt-10 px-6 mt-10" : "translate-x-[-200%]"}>
+                <div id="contact" className={isContactVisible ? "scale-100 duration-500 pb-10 pt-10 px-6 mt-10" : "scale-0"}>
                     <div className="pb-14 pt-2">
                         <h1 className="text-6xl bord text-white">Contact</h1>
                     </div>
