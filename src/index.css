@@ -50,7 +50,7 @@ code {
 }
 @keyframes grow-small {
     0%{
-        transform:scale(10)
+        transform:scale(15)
     }
     100%{
         transform:scale(1)

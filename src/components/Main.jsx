@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {HashLink} from "react-router-hash-link";
 import gd_banner from "../assets/img/gd_banner.png";
 import illustration_banner from "../assets/img/illustration_banner.png";
@@ -15,6 +15,30 @@ import arrow from "../assets/svg/arrow.svg";
 
 
 const Main = () => {
+
+    const [isWorksVisible, setIsWorksVisible] = React.useState(false);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const worksScroll = () => {
+                const workDiv = document.getElementById('works');
+                if(workDiv){
+                    const rect = workDiv.getBoundingClientRect();
+                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+                    if(rect.top < windowHeight-150){
+                        setIsWorksVisible(true);
+                    }
+                }
+            };
+            window.addEventListener('scroll', worksScroll);
+            if(isWorksVisible){
+                console.log("works visible");
+            }
+            return () => {
+                window.removeEventListener('scroll', worksScroll);}
+        },1000);
+        return () => clearInterval(interval);
+
+        },[isWorksVisible]);
 
     return (
         <>
@@ -39,7 +63,7 @@ const Main = () => {
                     </HashLink>
                 </div>
 
-                <div className="pt-4 pb-12" id="works">
+                <div className={!isWorksVisible ? "translate-x-[-200%]" : "pt-4 pb-12 transition-all ease-linear duration-500"} id="works">
                     <div className="flex">
                         <div className="px-6 mt-5">
                             <h1 className="text-6xl bord  text-white">Works</h1>
