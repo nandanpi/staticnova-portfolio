@@ -8,8 +8,8 @@ const Footer = () => {
             <div className="bg-black hidden md:block">
                 <div className="py-16">
                     <div className="grid grid-rows-2 text-center gap-10">
-                        <HashLink smooth to="/#about"><span className="text-3xl bord hover:line-through">About</span></HashLink>
-                        <HashLink smooth to="/#contact"><span className="text-3xl bord hover:line-through">Contact</span></HashLink>
+                        <HashLink to="/#about"><span className="text-3xl bord hover:line-through">About</span></HashLink>
+                        <HashLink to="/#contact"><span className="text-3xl bord hover:line-through">Contact</span></HashLink>
                     </div>
 
                     <div className="flex justify-center pt-10">
@@ -29,8 +29,8 @@ const Footer = () => {
             <div className="bg-black block md:hidden">
                 <div className="py-10 ">
                     <div className="grid grid-rows-2 text-center gap-10">
-                        <HashLink smooth to="/#about2"><span className="text-2xl bord hover:line-through">About</span></HashLink>
-                        <HashLink smooth to="/#contact2"><span className="text-2xl bord hover:line-through">Contact</span></HashLink>
+                        <HashLink to="/#about2"><span className="text-2xl bord hover:line-through">About</span></HashLink>
+                        <HashLink to="/#contact2"><span className="text-2xl bord hover:line-through">Contact</span></HashLink>
                     </div>
 
                     <div className="flex justify-center pt-10">
