@@ -14,7 +14,7 @@ import ellipse from "../assets/svg/Ellipse_gd.svg";
 import ellipseph from "../assets/svg/Ellipse_gdph.svg";
 import arrow from "../assets/svg/arrow.svg";
 import {BsChevronCompactLeft, BsChevronCompactRight} from "react-icons/bs";
-
+import {BsChevronRight} from "react-icons/bs";
 
 
 const Gd = () => {
@@ -99,14 +99,6 @@ const Gd = () => {
     return(
         <>
             <div className="text-white pb-10 hidden md:block">
-                {/*<div className="flex justify-between">*/}
-                {/*    <div className="px-10 py-6">*/}
-                {/*        <h1 className="text-4xl logo"><HashLink to="/" >Staticnova</HashLink></h1>*/}
-                {/*    </div>*/}
-                {/*    <div className={!nav ? "px-10 py-6" : "hidden"}>*/}
-                {/*        <HiMenu size={50} onClick={toggleNav} className="cursor-pointer"/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
                 <div className="flex">
                     <div className="flex w-screen">
                         <div className="flex justify-center items-center  w-full mt-64 z-20">
@@ -126,10 +118,61 @@ const Gd = () => {
                     </HashLink>
                 </div>
 
-                <div className="px-20 py-4" id="gd">
-                    <div className="grid grid-rows-2 gap-10 py-4 pb-14">
-                        <HashLink smooth to="https://www.instagram.com/p/CmLp7-DB7AA/"><img src={carpost} alt="" className="hover:scale-105 duration-100"/></HashLink>
-                        <HashLink smooth to="https://www.instagram.com/p/CrQ2nGsJhFQ/"><img src={recruit} alt="" className="hover:scale-105 duration-100"/></HashLink>
+                <div className="px-20 py-10" id="gd">
+                    <div className="space-y-16 py-4 pb-14">
+
+                        <div className="relative group">
+                            <img src={carpost} alt="" className="group-hover:scale-105 duration-300"/>
+                            <div className="absolute top-0 right-0 bg-black h-full w-full bg-opacity-0 group-hover:bg-opacity-70 group-hover:scale-105 duration-300">
+                                <div className="mx-10 my-5">
+                                    <div className="hidden group-hover:block">
+                                        <h1 className="bord text-4xl">DROWN</h1>
+                                    </div>
+                                    <div className="hidden group-hover:block pt-16 pb-10">
+                                        <span className="text-xl ocra">
+                                            I collaborated with writer Sowmya on this project to create captivating artwork and writing inspired by the song "Birthday" by TEN LEE from a curated Spotify playlist. My main role was to bring the visuals to life through artwork and graphic design, crafting a stunning carousel that beautifully complemented Sowmya's writing. Our goal was to create an immersive and captivating experience that captured the essence of the song.
+                                        </span>
+                                    </div>
+                                    <div className="justify-center hidden group-hover:flex">
+                                        <div className="ocra bg-[#485C6A] rounded-full">
+                                            <HashLink smooth to="https://www.instagram.com/p/CmLp7-DB7AA/" target="_blank">
+                                                <div className="flex py-4 px-6 space-x-4">
+                                                    <span>View on Instagram</span>
+                                                    <BsChevronRight className="pt-1" size={20}/>
+                                                </div>
+                                            </HashLink>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="relative group">
+                            <img src={recruit} alt="" className="group-hover:scale-105 duration-300"/>
+                            <div className="absolute top-0 right-0 bg-black h-full w-full bg-opacity-0 group-hover:bg-opacity-70 group-hover:scale-105 duration-300">
+                                <div className="m-10">
+                                    <div className="hidden group-hover:block">
+                                        <h1 className="bord text-4xl">NEW RECRUIT</h1>
+                                    </div>
+                                    <div className="hidden group-hover:block pt-20 pb-12">
+                                        <span className="text-xl ocra">
+                                            I had the opportunity to work on an exciting project announcing the results of new recruits for our club. With valuable feedback from the Design head, Akansha Singh, I refined the design to create an impressive final product. It was a rewarding experience to have the creative freedom to design every aspect from scratch.
+                                        </span>
+                                    </div>
+                                    <div className="justify-center hidden group-hover:flex">
+                                        <div className="ocra bg-[#485C6A] rounded-full">
+                                            <HashLink smooth to="https://www.instagram.com/p/CrQ2nGsJhFQ/" target="_blank">
+                                                <div className="flex py-4 px-6 space-x-4">
+                                                    <span>View on Instagram</span>
+                                                    <BsChevronRight className="pt-1" size={20}/>
+                                                </div>
+                                            </HashLink>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div className="grid grid-cols-2 gap-72 pb-14">
                         <img src={merchb} alt="" className="hover:scale-110 duration-200"/>

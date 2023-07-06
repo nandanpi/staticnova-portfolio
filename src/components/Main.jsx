@@ -23,9 +23,9 @@ const Main = () => {
                     <div className="flex w-screen">
                         <div className="flex justify-center items-center  w-full mt-32 z-20">
                             <div className="grid grid-rows-3 text-center">
-                                <span className="text-left text-white text-4xl ocra pt-16">Hey, I'm</span>
+                                <span className="text-left text-white text-2xl ocra pt-20">Hey, I'm</span>
                                 <span className="text-white text-8xl gtek pt-2">yashmitha</span>
-                                <span className="text-white text-2xl ocra ">An Illustrator and Graphic Designer</span>
+                                <span className="text-white text-2xl ocra pt-1">An Illustrator and Graphic Designer</span>
                             </div>
                         </div>
                     </div>
@@ -234,22 +234,31 @@ const Main = () => {
                             </div>
                         </div>
 
-                        <div id="about2">
+                        <div id="about2" className="justify-center pb-20">
                             <div>
                                 <span className="bord text-3xl">About Me</span>
                             </div>
-                            <div className="py-16 flex justify-center">
-                                <img src={pfp} alt="" className="max-w-[14rem] "/>
+
+                            <div className="bg-black bg-opacity-40 backdrop-blur-md rounded-t-full flex justify-center mt-10">
+                                <div className="max-w-[13rem] py-10 ">
+                                    <img src={pfp} alt=""/>
+                                </div>
                             </div>
-                            <div className="pb-16 flex">
-                                <span className="ocra text-3xl max-w-sm text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae corporis ducimus iste non odit, officia quis quos veritatis? Dolor ducimus error molestiae mollitia, natus temporibus?</span>
+
+                            <div className="flex justify-center px-4 bg-black bg-opacity-40 backdrop-blur-md pb-10">
+                                <div className="flex justify-center">
+                                    <p className="ocra text-white text-md pr-10 justify-center ml-10">
+                                        I'm Yashmitha, <span className="text-[#D645D6]">a freelance illustrator and graphic designer</span>. I specialise in creating captivating visuals, including <span className="text-[#1CAAF3]">vectorizing, logo design, branding, digital art, and more</span>. With expertise in industry-standard software like <span className="text-[#AB64F3]">Adobe Photoshop and Illustrator</span>, I bring your ideas to life with <span className="text-[#F4F895]">high-quality and engaging designs</span>. Let's collaborate to make your vision stand out.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="flex justify-center pb-16">
-                                <ul className="flex space-x-10">
-                                    <li><SiAdobephotoshop size={50} className="text-white"/></li>
-                                    <li><SiAdobeillustrator size={50} className="text-white"/></li>
-                                    <li><SiAdobexd size={50} className="text-white"/></li>
-                                </ul>
+                            <div className="bg-black bg-opacity-40 backdrop-blur-md flex justify-center pb-6">
+                                <hr className="w-[18rem] p-2"/>
+                            </div>
+                            <div className="flex justify-evenly bg-black bg-opacity-40 backdrop-blur-md pb-10 rounded-b-2xl">
+                                <SiAdobephotoshop size={40} className="text-white"/>
+                                <SiAdobeillustrator size={40} className="text-white"/>
+                                <SiAdobexd size={40} className="text-white"/>
                             </div>
                         </div>
 
