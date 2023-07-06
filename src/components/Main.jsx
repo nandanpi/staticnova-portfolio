@@ -29,7 +29,7 @@ const Main = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="absolute z-10 flex justify-center w-full pt-36">
+                    <div className="absolute z-10 flex justify-center w-full pt-36 growsmall">
                         <img src={ellipse} alt=""/>
                     </div>
                 </div>
