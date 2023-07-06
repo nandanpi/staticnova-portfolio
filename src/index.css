@@ -57,7 +57,7 @@ code {
     }
 }
 .navbar-load{
-    animation : navbar-load 500ms;
+    animation : navbar-load 1s;
 }
 @keyframes navbar-load {
     0%{

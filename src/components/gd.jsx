@@ -134,7 +134,7 @@ const Gd = () => {
                                         </span>
                                     </div>
                                     <div className="justify-center hidden group-hover:flex">
-                                        <div className="ocra bg-[#485C6A] rounded-full">
+                                        <div className="ocra bg-[#485C6A] hover:bg-black hover:scale-110 duration-200 transition-all rounded-full">
                                             <HashLink smooth to="https://www.instagram.com/p/CmLp7-DB7AA/" target="_blank">
                                                 <div className="flex py-4 px-6 space-x-4">
                                                     <span>View on Instagram</span>
@@ -160,7 +160,7 @@ const Gd = () => {
                                         </span>
                                     </div>
                                     <div className="justify-center hidden group-hover:flex">
-                                        <div className="ocra bg-[#485C6A] rounded-full">
+                                        <div className="ocra bg-[#5E5E5A] hover:bg-black hover:scale-110 duration-200 transition-all rounded-full">
                                             <HashLink smooth to="https://www.instagram.com/p/CrQ2nGsJhFQ/" target="_blank">
                                                 <div className="flex py-4 px-6 space-x-4">
                                                     <span>View on Instagram</span>

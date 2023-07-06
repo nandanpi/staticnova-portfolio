@@ -116,7 +116,7 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div id="contact" className="pb-[8rem] pt-10 px-6 mt-10">
+                <div id="contact" className="pb-10 pt-10 px-6 mt-10">
                     <div className="pb-14 pt-2">
                         <h1 className="text-6xl bord text-white">Contact</h1>
                     </div>
