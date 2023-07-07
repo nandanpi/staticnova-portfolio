@@ -17,16 +17,16 @@ const Navbar2 = () => {
                     </div>
                     <div className="p-6">
                         <ul className="flex space-x-12 text-xl bord">
-                            <li className="hover:border-b-2 pb-1"><HashLink smooth to="/">Home</HashLink></li>
-                            <li className="hover:border-b-2 pb-1"><HashLink smooth to="/illustrations#top">Illustrations</HashLink></li>
-                            <li className="hover:border-b-2 pb-1"><HashLink smooth to="/graphicdesign#top">Graphic Design</HashLink></li>
-                            <li className="hover:border-b-2 pb-1"><HashLink smooth to="/uiux#top">UI/UX</HashLink></li>
+                            <li className="hover:border-b-2 pb-1"><HashLink to="/">Home</HashLink></li>
+                            <li className="hover:border-b-2 pb-1"><HashLink to="/illustrations#top">Illustrations</HashLink></li>
+                            <li className="hover:border-b-2 pb-1"><HashLink to="/graphicdesign#top">Graphic Design</HashLink></li>
+                            <li className="hover:border-b-2 pb-1"><HashLink to="/uiux#top">UI/UX</HashLink></li>
                         </ul>
                     </div>
                 </div>
                 <div className="block md:hidden text-white z-0">
                     <div className="flex justify-between py-4 px-6">
-                        <span className="logo text-2xl pt-1"><HashLink smooth to="/">Staticnova</HashLink></span>
+                        <span className="logo text-2xl pt-1"><HashLink to="/">Staticnova</HashLink></span>
                         <HiMenu size={40} onClick={toggleNav} className={nav ? "hidden" : "block"}/>
                     </div>
                 </div>
@@ -40,25 +40,25 @@ const Navbar2 = () => {
                 <div className="flex justify-center text-white h-screen pt-16">
                     <ul className="justify-center items-center space-y-5 mt-24 text-center ocra">
                         <li className="py-2">
-                            <HashLink smooth to="/" onClick={toggleNav} className="text-4xl ">Home</HashLink>
+                            <HashLink to="/" onClick={toggleNav} className="text-4xl ">Home</HashLink>
                         </li>
                         <div className="flex justify-center">
                             <hr className="w-80 p-[2px] bg-white rounded-full"/>
                         </div>
                         <li className="py-2">
-                            <HashLink smooth to="/illustrations#top" onClick={toggleNav} className="text-4xl ">Illustrations</HashLink>
+                            <HashLink to="/illustrations#top" onClick={toggleNav} className="text-4xl ">Illustrations</HashLink>
                         </li>
                         <div className="flex justify-center">
                             <hr className="w-80 p-[2px] bg-white rounded-full"/>
                         </div>
                         <li className="py-2">
-                            <HashLink smooth to="/graphicdesign#top" onClick={toggleNav} className="text-4xl ">Graphic Design</HashLink>
+                            <HashLink to="/graphicdesign#top" onClick={toggleNav} className="text-4xl ">Graphic Design</HashLink>
                         </li>
                         <div className="flex justify-center">
                             <hr className="w-80 p-[2px] bg-white rounded-full"/>
                         </div>
                         <li>
-                            <HashLink smooth to="/uiux" onClick={toggleNav} className="text-4xl ">UI/UX</HashLink>
+                            <HashLink to="/uiux" onClick={toggleNav} className="text-4xl ">UI/UX</HashLink>
                         </li>
                     </ul>
                 </div>

@@ -75,7 +75,7 @@ const Main = () => {
                             <div className="max-w-sm rounded-[40px] group px-5">
                                 <div className="relative">
                                     <img src={ui_banner} alt="" className="rounded-[40px] group-hover:scale-110 duration-200"/>
-                                    <HashLink smooth to="/uiux">
+                                    <HashLink to="/uiux#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] group-hover:scale-110 duration-200 bg-black opacity-60  flex">
                                             <div className="flex justify-center items-center h-full w-full">
                                                 <h1 className="text-3xl text-white bord">UI/UX</h1>
@@ -107,9 +107,9 @@ const Main = () => {
                         <div className="bg-black bg-opacity-40 backdrop-blur-md rounded-r-2xl py-6 pl-16">
                             <div className="border-l-2 border-l-white flex h-full justify-center pt-14">
                                 <div className=" grid grid-rows-3 px-20">
-                                    <SiAdobephotoshop className="text-white" size={60}/>
-                                    <SiAdobeillustrator className="text-white" size={60}/>
-                                    <SiAdobexd className="text-white" size={60}/>
+                                    <div className="hover:scale-110 duration-200"><SiAdobephotoshop className="text-white" size={60}/></div>
+                                    <div className="hover:scale-110 duration-200"><SiAdobeillustrator className="text-white" size={60}/></div>
+                                    <div className="hover:scale-110 duration-200"><SiAdobexd className="text-white" size={60}/></div>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +204,7 @@ const Main = () => {
                             <div className="grid grid-rows-3 py-16 gap-10">
                                 <div className="relative">
                                     <img src={illustration_banner} alt="" className="rounded-[40px] max-w-[16rem]"/>
-                                    <HashLink smooth to="/illustrations#top">
+                                    <HashLink to="/illustrations#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
                                                 <h1 className="text-2xl text-white bord">Illustrations</h1>
@@ -214,7 +214,7 @@ const Main = () => {
                                 </div>
                                 <div className="relative">
                                     <img src={gd_banner} alt="" className="rounded-[40px] max-w-[16rem]"/>
-                                    <HashLink smooth to="/graphicdesign#top">
+                                    <HashLink to="/graphicdesign#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
                                                 <h1 className="text-2xl text-white bord max-w-min text-center">Graphic Design</h1>
@@ -224,7 +224,7 @@ const Main = () => {
                                 </div>
                                 <div className="relative">
                                     <img src={ui_banner} alt="" className="rounded-[40px] max-w-[16rem]"/>
-                                    <HashLink smooth to="/uiux">
+                                    <HashLink to="/uiux#top">
                                         <div className="absolute top-0 left-0 h-full w-full rounded-[40px] bg-black opacity-60  transition-all duration-300 flex">
                                             <div className="flex justify-center items-center h-full w-full">
                                                 <h1 className="text-2xl text-white bord">UI/UX</h1>
