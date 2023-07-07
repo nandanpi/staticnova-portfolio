@@ -10,7 +10,7 @@ const Navbar = () => {
     }
     return(
         <>
-            <div className="navbar-load max-w-[1920px] mx-auto">
+            <div className="navbar-load max-w-[1920px] mx-auto ">
                 <div className="hidden md:flex justify-between text-white ">
                     <div className="px-6 py-4">
                         <HashLink smooth to="/"><span className="logo text-4xl">Staticnova</span></HashLink>
