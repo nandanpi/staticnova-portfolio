@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import {HashLink} from "react-router-hash-link";
 import gd_banner from "../assets/img/gd_banner.png";
 import illustration_banner from "../assets/img/illustration_banner.png";
@@ -15,96 +15,6 @@ import arrow from "../assets/svg/arrow.svg";
 
 
 const Main = () => {
-
-    const [isWorksVisible, setIsWorksVisible] = useState(false);
-    const [isAboutVisible, setIsAboutVisible] = useState(false);
-    const [isContactVisible, setIsContactVisible] = useState(false);
-    const [isWorksVisibleMobile, setIsWorksVisibleMobile] = useState(false);
-    const [isAboutVisibleMobile, setIsAboutVisibleMobile] = useState(false);
-    const [isContactVisibleMobile, setIsContactVisibleMobile] = useState(false);
-    useEffect(() => {
-        const interval = setInterval(() => {
-            const worksScroll = () => {
-                const workDiv = document.getElementById('works');
-                if(workDiv){
-                    const rect = workDiv.getBoundingClientRect();
-                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-                    if(rect.top < windowHeight-50){
-                        setIsWorksVisible(true);
-                    }
-                }
-            };
-            const aboutScroll = () => {
-                const aboutDiv = document.getElementById('about');
-                if(aboutDiv){
-                    const rect = aboutDiv.getBoundingClientRect();
-                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-                    if(rect.top < windowHeight-50){
-                        setIsAboutVisible(true);
-                    }
-                }
-            };
-            const contactScroll = () => {
-                const contactDiv = document.getElementById('contact');
-                if(contactDiv){
-                    const rect = contactDiv.getBoundingClientRect();
-                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-                    if(rect.top < windowHeight-50){
-                        setIsContactVisible(true);
-                    }
-                }
-            };
-            const worksScrollMobile = () => {
-                const workDiv = document.getElementById('works2');
-                if(workDiv){
-                    const rect = workDiv.getBoundingClientRect();
-                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-                    if(rect.top < windowHeight-50){
-                        setIsWorksVisibleMobile(true);
-                    }
-                }
-            };
-            const aboutScrollMobile = () => {
-                const aboutDiv = document.getElementById('about2');
-                if(aboutDiv){
-                    const rect = aboutDiv.getBoundingClientRect();
-                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-                    if(rect.top < windowHeight-50){
-                        setIsAboutVisibleMobile(true);
-                    }
-                }
-            };
-            const contactScrollMobile = () => {
-                const contactDiv = document.getElementById('contact2');
-                if(contactDiv){
-                    const rect = contactDiv.getBoundingClientRect();
-                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-                    if(rect.top < windowHeight-50){
-                        setIsContactVisibleMobile(true);
-                    }
-                }
-            }
-
-            window.addEventListener('scroll', aboutScroll);
-            window.addEventListener('scroll', worksScroll);
-            window.addEventListener('scroll', contactScroll);
-            window.addEventListener('scroll', aboutScrollMobile);
-            window.addEventListener('scroll', worksScrollMobile);
-            window.addEventListener('scroll', contactScrollMobile);
-            if(isWorksVisible){
-                console.log("works visible");
-            }
-            return () => {
-                window.removeEventListener('scroll', aboutScroll);
-                window.removeEventListener('scroll', worksScroll);
-                window.removeEventListener('scroll', contactScroll);
-                window.removeEventListener('scroll', aboutScrollMobile);
-                window.removeEventListener('scroll', worksScrollMobile);
-                window.removeEventListener('scroll', contactScrollMobile);
-            }
-        },1000);
-        return () => clearInterval(interval);
-        },[isWorksVisible]);
 
     return (
         <>
@@ -129,7 +39,7 @@ const Main = () => {
                     </HashLink>
                 </div>
 
-                <div className={!isWorksVisible ? "translate-x-[-200%]" : "pt-4 pb-12 transition-all ease-linear duration-500"} id="works">
+                <div className="pt-4 pb-12" id="works">
                     <div className="flex">
                         <div className="px-6 mt-5">
                             <h1 className="text-6xl bord  text-white">Works</h1>
@@ -178,7 +88,7 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div id="about" className={isAboutVisible ? "ease-linear duration-500 pt-7 mt-14 px-6 space-y-6 pb-10" : "translate-x-[200%]"}>
+                <div id="about" className="pt-7 mt-14 px-6 space-y-6 pb-10">
                     <div>
                         <h1 className="text-6xl bord text-white">About Me</h1>
                     </div>
@@ -206,7 +116,7 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div id="contact" className={isContactVisible ? "ease-in duration-500 pb-10 pt-10 px-6 mt-10" : "translate-x-[-200%]"}>
+                <div id="contact" className="pb-10 pt-10 px-6 mt-10">
                     <div className="pb-14 pt-2">
                         <h1 className="text-6xl bord text-white">Contact</h1>
                     </div>
@@ -286,7 +196,7 @@ const Main = () => {
                         <HashLink smooth to="/#works2"><img src={arrow} alt="" className="w-[7rem] h-[7rem] animate-bounce"/></HashLink>
                     </div>
 
-                    <div id="works2" className={isWorksVisibleMobile ? "ease-in duration-500" : "translate-x-[-200%]"}>
+                    <div id="works2">
                         <div className="pt-10">
                             <span className="bord text-3xl">Works</span>
                         </div>
@@ -325,7 +235,7 @@ const Main = () => {
                             </div>
                         </div>
                     </div>
-                    <div id="about2" className={isAboutVisibleMobile ? "justify-center pb-20 ease-in duration-500" : "translate-x-[200%]"}>
+                    <div id="about2" className="justify-center pb-20 ">
                         <div>
                             <span className="bord text-3xl">About Me</span>
                         </div>
@@ -353,7 +263,7 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <div id="contact2" className={isContactVisibleMobile ? "ease-in duration-500" : "translate-x-[-200%]"}>
+                    <div id="contact2">
                         <div>
                             <span className="bord text-3xl">Contact</span>
                         </div>
