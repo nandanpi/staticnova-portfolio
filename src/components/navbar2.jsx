@@ -33,7 +33,7 @@ const Navbar2 = () => {
             </div>
 
 
-            <div className={nav ? "fixed z-50 top-0 right-0 w-screen h-screen backdrop-blur-lg bg-[#0B1544] bg-opacity-20 z-[999999]" : "hidden"}>
+            <div className={nav ? "fixed top-0 right-0 w-screen h-screen backdrop-blur-lg bg-[#0B1544] bg-opacity-20 z-[999999]" : "hidden"}>
                 <div className="flex w-full justify-end">
                     <AiOutlineClose size={40} onClick={toggleNav} className="cursor-pointer text-white  mx-6 my-4"/>
                 </div>
