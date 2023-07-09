@@ -24,7 +24,7 @@ const Navbar2 = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="block md:hidden text-white z-0">
+                <div className="block md:hidden text-white z-[99999]">
                     <div className="flex justify-between py-4 px-6">
                         <span className="logo text-2xl pt-1"><HashLink to="/">Staticnova</HashLink></span>
                         <HiMenu size={40} onClick={toggleNav} className={nav ? "hidden" : "block"}/>
@@ -33,7 +33,7 @@ const Navbar2 = () => {
             </div>
 
 
-            <div className={nav ? "fixed z-50 top-0 right-0 w-screen h-screen backdrop-blur-lg bg-[#0B1544] bg-opacity-20" : "hidden"}>
+            <div className={nav ? "fixed z-50 top-0 right-0 w-screen h-screen backdrop-blur-lg bg-[#0B1544] bg-opacity-20 z-[999999]" : "hidden"}>
                 <div className="flex w-full justify-end">
                     <AiOutlineClose size={40} onClick={toggleNav} className="cursor-pointer text-white  mx-6 my-4"/>
                 </div>
