@@ -15,6 +15,8 @@ import ellipseph from "../assets/svg/Ellipse_gdph.svg";
 import arrow from "../assets/svg/arrow.svg";
 import {BsChevronCompactLeft, BsChevronCompactRight} from "react-icons/bs";
 import {BsChevronRight} from "react-icons/bs";
+import Shirt1 from "../assets/img/Shirt1.png";
+import Shirt2 from "../assets/img/Shirt2.png";
 
 
 const Gd = () => {
@@ -32,8 +34,8 @@ const Gd = () => {
     ]
 
     const slider2 = [
-        require("../assets/img/merchf.png"),
-        require("../assets/img/merchb.png")
+        require("../assets/img/Shirt1.png"),
+        require("../assets/img/Shirt2.png")
     ]
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -174,23 +176,23 @@ const Gd = () => {
                         </div>
 
                     </div>
-                    <div className="grid grid-cols-2 gap-72 pb-14">
-                        <img src={merchb} alt="" className="hover:scale-110 duration-200"/>
-                        <img src={merchf} alt="" className="hover:scale-110 duration-200"/>
+                    <div className="grid grid-cols-2 gap-20 pb-14">
+                        <img src={Shirt1} alt="" className="hover:scale-110 duration-200"/>
+                        <img src={Shirt2} alt="" className="hover:scale-110 duration-200"/>
                     </div>
                     <div className="grid grid-cols-2 pb-14 gap-20">
                         <img src={fluid} alt="" className="hover:scale-110 duration-200"/>
                         <img src={oplogo} alt="" className="hover:scale-110 duration-200"/>
                     </div>
-                    <div className="space-y-4 grid grid-rows-2">
-                        <span className="bord text-4xl">Clubs, Organizations and clients</span>
-                        <span className="ocra text-xl">Most of my projects were a part of students' clubs in my university.</span>
-                    </div>
-                    <div className="grid grid-cols-3 gap-72 py-16">
-                        <img src={post} alt="" className="object-fill hover:scale-110 duration-200"/>
-                        <img src={ghg} alt="" className="object-contain hover:scale-110 duration-200"/>
-                        <img src={acmw} alt="" className="object-contain hover:scale-110 duration-200"/>
-                    </div>
+                    {/*<div className="space-y-4 grid grid-rows-2">*/}
+                    {/*    <span className="bord text-4xl">Clubs, Organizations and clients</span>*/}
+                    {/*    <span className="ocra text-xl">Most of my projects were a part of students' clubs in my university.</span>*/}
+                    {/*</div>*/}
+                    {/*<div className="grid grid-cols-3 gap-72 py-16">*/}
+                    {/*    <img src={post} alt="" className="object-fill hover:scale-110 duration-200"/>*/}
+                    {/*    <img src={ghg} alt="" className="object-contain hover:scale-110 duration-200"/>*/}
+                    {/*    <img src={acmw} alt="" className="object-contain hover:scale-110 duration-200"/>*/}
+                    {/*</div>*/}
                 </div>
             </div>
 
@@ -275,16 +277,16 @@ const Gd = () => {
                             <img src={oplogo} alt="" className="pt-12"/>
                         </div>
 
-                        <div className="pt-6 pb-12 flex justify-center">
-                            <span className="ocra text-3xl text-center">Clubs, Organizations and clients</span>
-                        </div>
-                        <div className="flex justify-center pb-16">
-                            <div className="space-y-12 max-w-[10rem]">
-                                <img src={post} alt=""/>
-                                <img src={ghg} alt=""/>
-                                <img src={acmw} alt=""/>
-                            </div>
-                        </div>
+                        {/*<div className="pt-6 pb-12 flex justify-center">*/}
+                        {/*    <span className="ocra text-3xl text-center">Clubs, Organizations and clients</span>*/}
+                        {/*</div>*/}
+                        {/*<div className="flex justify-center pb-16">*/}
+                        {/*    <div className="space-y-12 max-w-[10rem]">*/}
+                        {/*        <img src={post} alt=""/>*/}
+                        {/*        <img src={ghg} alt=""/>*/}
+                        {/*        <img src={acmw} alt=""/>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </div>

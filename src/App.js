@@ -9,6 +9,7 @@ import NotFound from "./components/404";
 import Navbar from "./components/navbar";
 import Navbar2 from "./components/navbar2";
 
+
 function App() {
   return (
     <>
